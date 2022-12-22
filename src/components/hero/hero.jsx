@@ -1,8 +1,10 @@
 import React from "react";
 import {FaInstagram, FaTiktok} from 'react-icons/fa'
+import { ImageHero } from "../../assets/manage";
 
 function Hero() {
   return (
+    <>
     <section className="px-[1.32rem]">
       <h1 className="text-2xl font-semibold">
         Urus foto{" "}
@@ -30,6 +32,8 @@ function Hero() {
         </div>
       </div>
     </section>
+    <img src={ImageHero} className='mt-14 w-full h-full object-fill' alt="" />
+    </>
   );
 }
 
