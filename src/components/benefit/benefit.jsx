@@ -3,10 +3,11 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import { DataModel } from "../../data/data";
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import { Benefit2 } from "../../assets/manage";
+import { Link } from "react-router-dom";
 
 function Benefit() {
   return (
-    <section className="px-6">
+    <section id="benefit" className="px-6">
       <h1 className="text-2xl font-semibold">KENAPA HARUS FOTOLAKU ?</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste et
@@ -30,7 +31,7 @@ export default Benefit;
 
 function Card(props) {
   return (
-    <div className="w-[12.375rem] h-[15.25rem] relative">
+    <Link className="w-[12.375rem] h-[15.25rem] relative" to={`/model/${props.id}`}>
       <LazyLoadImage
         width={198}
         height={244}
@@ -44,7 +45,7 @@ function Card(props) {
       <p className="absolute bottom-5 left-3 z-10 text-white font-bold text-xl">
         {props.text}
       </p>
-    </div>
+    </Link>
   );
 }
 

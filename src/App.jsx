@@ -1,6 +1,7 @@
 import { AnimatePresence } from "framer-motion"
 import { BrowserRouter, Navigate, Route, Routes, useLocation } from "react-router-dom"
 import Landing from "./pages/landing/landing"
+import ModelDetails from "./pages/model/model"
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function AnimatedRoutes() {
 
       //* Registered Path
       <Route path="/landing" element={<Landing/>}/>
+      <Route path="/model/:id" element={<ModelDetails/>}/>
     </Routes>
   </AnimatePresence>
   )

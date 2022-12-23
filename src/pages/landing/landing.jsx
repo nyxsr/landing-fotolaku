@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
 import Behind from "../../components/behind/behind"
 import Benefit from "../../components/benefit/benefit"
 import Client from "../../components/client/client"
@@ -11,6 +12,22 @@ import Navbar from "../../components/navbar/navbar"
 import Process from "../../components/process/process"
 
 function Landing() {
+  const location = useLocation()
+
+  const gotoElement = () =>{
+    if (location !== null || location !== '') {
+      let sectionID = location.hash.replace("#",'')
+      const element = document.getElementById(sectionID)
+      element?.scrollIntoView()
+    }
+  }
+
+  useEffect(()=>{
+    if (location !== '' || location !== null) {
+      gotoElement();
+    }
+  },[location])
+  
   return (
     <>
       <FABwa/>

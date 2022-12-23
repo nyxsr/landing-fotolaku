@@ -1,6 +1,5 @@
 import React from "react";
 import { FaPlay } from "react-icons/fa";
-import { ClientTemporaryVideo } from "../../assets/manage";
 import { AiOutlineStar,AiFillStar } from 'react-icons/ai'
 import { DataClient } from "../../data/data";
 
@@ -46,11 +45,11 @@ function Card(props) {
         </p>
         <div className="flex relative text-[#FD8703] text-3xl">
           {Array.from(Array(5), (e, i) => {
-            return <AiOutlineStar />;
+            return <AiOutlineStar key={i} />;
           })}
           <div className="flex text-3xl text-[#FD8703] absolute">
             {Array.from(Array(props.rating), (e, i) => {
-              return <AiFillStar />;
+              return <AiFillStar key={i} />;
             })}
           </div>
         </div>

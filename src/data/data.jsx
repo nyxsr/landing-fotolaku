@@ -32,6 +32,14 @@ import {
   Kevin2,
   Kevin3,
   Kevin4,
+  Logo1,
+  Logo10,
+  Logo2,
+  Logo3,
+  Logo5,
+  Logo6,
+  Logo8,
+  Logo9,
   ModelConny,
   ModelDio,
   ModelEdward,
@@ -310,3 +318,30 @@ export const DataClient = [
     src: ClientTemporaryVideo,
   },
 ];
+
+export const DataLogoClient = [
+  {
+    image:Logo1
+  },
+  {
+    image:Logo2
+  },
+  {
+    image:Logo3
+  },
+  {
+    image:Logo5
+  },
+  {
+    image:Logo6
+  },
+  {
+    image:Logo8
+  },
+  {
+    image:Logo9
+  },
+  {
+    image:Logo10
+  }
+]

@@ -4,6 +4,14 @@ import Detail1 from "./icons/detail-1.svg";
 import Detail2 from "./icons/detail-2.svg";
 import Star1 from "./icons/star-1.svg";
 import Star2 from "./icons/star-2.svg";
+import Logo1 from "./icons/1.webp";
+import Logo2 from "./icons/2.webp";
+import Logo3 from "./icons/3.webp";
+import Logo5 from "./icons/5.webp";
+import Logo6 from "./icons/6.webp";
+import Logo8 from "./icons/8.webp";
+import Logo9 from "./icons/9.webp";
+import Logo10 from "./icons/10.webp";
 
 import ImageHero from "./image/bg-hero.webp";
 import ProcessConsult from "./image/ProcessConsult.webp";
@@ -24,71 +32,70 @@ import ModelNada from "./image/A7209309.webp";
 import ModelSteven from "./image/A7201499.webp";
 import ModelWardah from "./image/A7203263.webp";
 import ModelNathan from "./image/A7207756.webp";
-import Benefit2 from './image/benefit2.webp'
-import Benefit3 from './image/benefit3.webp'
-import ClientTemporaryVideo from './videos/ClientTemporary.mp4'
-import BTSTemporary from './videos/BTSTemporary.mp4'
+import Benefit2 from "./image/benefit2.webp";
+import Benefit3 from "./image/benefit3.webp";
+import ClientTemporaryVideo from "./videos/ClientTemporary.mp4";
+import BTSTemporary from "./videos/BTSTemporary.mp4";
 
 import Jose1 from "./models/Jose1.webp";
-import Jose2 from './models/Jose2.webp'
-import Jose3 from './models/Jose3.webp'
-import Jose4 from './models/Jose4.webp'
+import Jose2 from "./models/Jose2.webp";
+import Jose3 from "./models/Jose3.webp";
+import Jose4 from "./models/Jose4.webp";
 
-import Dio1 from './models/Dio1.webp'
-import Dio2 from './models/Dio2.webp'
-import Dio3 from './models/Dio3.webp'
-import Dio4 from './models/Dio4.webp'
+import Dio1 from "./models/Dio1.webp";
+import Dio2 from "./models/Dio2.webp";
+import Dio3 from "./models/Dio3.webp";
+import Dio4 from "./models/Dio4.webp";
 
-import Jessica1 from './models/Jessica1.webp'
-import Jessica2 from './models/Jessica2.webp'
-import Jessica3 from './models/Jessica3.webp'
-import Jessica4 from './models/Jessica4.webp'
+import Jessica1 from "./models/Jessica1.webp";
+import Jessica2 from "./models/Jessica2.webp";
+import Jessica3 from "./models/Jessica3.webp";
+import Jessica4 from "./models/Jessica4.webp";
 
-import Edward1 from './models/Edward1.webp'
-import Edward2 from './models/Edward2.webp'
-import Edward3 from './models/Edward3.webp'
-import Edward4 from './models/Edward4.webp'
+import Edward1 from "./models/Edward1.webp";
+import Edward2 from "./models/Edward2.webp";
+import Edward3 from "./models/Edward3.webp";
+import Edward4 from "./models/Edward4.webp";
 
-import Connie1 from './models/Connie1.webp'
-import Connie2 from './models/Connie2.webp'
-import Connie3 from './models/Connie3.webp'
-import Connie4 from './models/Connie4.webp'
+import Connie1 from "./models/Connie1.webp";
+import Connie2 from "./models/Connie2.webp";
+import Connie3 from "./models/Connie3.webp";
+import Connie4 from "./models/Connie4.webp";
 
-import Jennifer1 from './models/Jennifer1.webp'
-import Jennifer2 from './models/Jennifer2.webp'
-import Jennifer3 from './models/Jennifer3.webp'
-import Jennifer4 from './models/Jennifer4.webp'
+import Jennifer1 from "./models/Jennifer1.webp";
+import Jennifer2 from "./models/Jennifer2.webp";
+import Jennifer3 from "./models/Jennifer3.webp";
+import Jennifer4 from "./models/Jennifer4.webp";
 
-import Nathan1 from './models/Nathan1.webp'
-import Nathan2 from './models/Nathan2.webp'
-import Nathan3 from './models/Nathan3.webp'
-import Nathan4 from './models/Nathan4.webp'
+import Nathan1 from "./models/Nathan1.webp";
+import Nathan2 from "./models/Nathan2.webp";
+import Nathan3 from "./models/Nathan3.webp";
+import Nathan4 from "./models/Nathan4.webp";
 
-import Jordan1 from './models/Jordan1.webp'
-import Jordan2 from './models/Jordan2.webp'
-import Jordan3 from './models/Jordan3.webp'
-import Jordan4 from './models/Jordan4.webp'
+import Jordan1 from "./models/Jordan1.webp";
+import Jordan2 from "./models/Jordan2.webp";
+import Jordan3 from "./models/Jordan3.webp";
+import Jordan4 from "./models/Jordan4.webp";
 
-import Kevin1 from './models/Kevin1.webp'
-import Kevin2 from './models/Kevin2.webp'
-import Kevin3 from './models/Kevin3.webp'
-import Kevin4 from './models/Kevin4.webp'
+import Kevin1 from "./models/Kevin1.webp";
+import Kevin2 from "./models/Kevin2.webp";
+import Kevin3 from "./models/Kevin3.webp";
+import Kevin4 from "./models/Kevin4.webp";
 
-import Nada1 from './models/Nada1.webp'
-import Nada2 from './models/Nada2.webp'
-import Nada3 from './models/Nada3.webp'
-import Nada4 from './models/Nada4.webp'
+import Nada1 from "./models/Nada1.webp";
+import Nada2 from "./models/Nada2.webp";
+import Nada3 from "./models/Nada3.webp";
+import Nada4 from "./models/Nada4.webp";
 
-import Steven1 from './models/Steven1.webp'
-import Steven2 from './models/Steven2.webp'
-import Steven3 from './models/Steven3.webp'
-import Steven4 from './models/Steven4.webp'
+import Steven1 from "./models/Steven1.webp";
+import Steven2 from "./models/Steven2.webp";
+import Steven3 from "./models/Steven3.webp";
+import Steven4 from "./models/Steven4.webp";
 
-import Wardah1 from './models/Wardah1.webp'
-import Wardah2 from './models/Wardah2.webp'
-import Wardah3 from './models/Wardah3.webp'
-import Wardah4 from './models/Wardah4.webp'
-
+import Wardah1 from "./models/Wardah1.webp";
+import Wardah2 from "./models/Wardah2.webp";
+import Wardah3 from "./models/Wardah3.webp";
+import Wardah4 from "./models/Wardah4.webp";
 
 //* Placeholder
 import PlaceConsult from "./placeholder/ProcessConsult.webp";
@@ -111,6 +118,14 @@ import PlaceNathan from "./placeholder/PlaceNathan.webp";
 import PlaceNada from "./placeholder/A7209309.webp";
 
 export {
+  Logo1,
+  Logo2,
+  Logo3,
+  Logo5,
+  Logo6,
+  Logo8,
+  Logo9,
+  Logo10,
   BTSTemporary,
   ClientTemporaryVideo,
   Benefit2,

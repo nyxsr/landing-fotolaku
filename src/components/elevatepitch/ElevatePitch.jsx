@@ -11,7 +11,7 @@ function ElevatePitch() {
       <div className="overflow-x-scroll">
         <div className="flex flex-nowrap px-6 py-6 w-fit gap-3">
           {Array.from(Array(5), (e, i) => {
-            return <Card />;
+            return <Card key={i}/>;
           })}
         </div>
       </div>
