@@ -6,7 +6,7 @@ import { DataClient } from "../../data/data";
 
 function Client() {
   return (
-    <section className="px-6">
+    <section className="pl-6">
       <div className="flex flex-col justify-center items-center text-2xl font-semibold py-9">
         <h1>LIHAT KATA</h1>
         <div className="relative inline-block w-fit">
@@ -27,7 +27,7 @@ function Client() {
 
 function Card(props) {
   return (
-    <div className="bg-white py-2 px-[0.5285rem] rounded-xl flex gap-2 items-center shadow-xl">
+    <div className="bg-white py-2 pl-[0.5285rem] rounded-xl flex gap-2 items-center shadow-xl">
       <div className="relative w-[19.875rem] h-[8.875rem] rounded-xl">
         <video className="w-[19.875rem] h-[8.875rem] object-cover rounded-xl">
           <source src={props.video} />

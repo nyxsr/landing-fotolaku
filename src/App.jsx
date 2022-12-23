@@ -1,26 +1,27 @@
-import Benefit from "./components/benefit/benefit"
-import Client from "./components/client/client"
-import Copywriting from "./components/copywriting/copywriting"
-import ElevatePitch from "./components/elevatepitch/ElevatePitch"
-import FABwa from "./components/fab/FAB"
-import Hero from "./components/hero/hero"
-import Logoclient from "./components/logoclient/logoclient"
-import Navbar from "./components/navbar/navbar"
-import Process from "./components/process/process"
+import { AnimatePresence } from "framer-motion"
+import { BrowserRouter, Navigate, Route, Routes, useLocation } from "react-router-dom"
+import Landing from "./pages/landing/landing"
 
 function App() {
   return (
-    <div>
-      <FABwa/>
-      <Navbar/>
-      <Hero/>
-      <Logoclient/>
-      <ElevatePitch/>
-      <Copywriting/>
-      <Process/>
-      <Benefit/>
-      <Client/>
-    </div>
+    <BrowserRouter>
+      <AnimatedRoutes/>
+    </BrowserRouter>
+  )
+}
+
+function AnimatedRoutes() {
+  const location = useLocation()
+  return(
+    <AnimatePresence mode="wait">
+    <Routes location={location} key={location.pathname}>
+      //* Main Page Path
+      <Route path='/' element={<Navigate to='/landing'/>} />
+
+      //* Registered Path
+      <Route path="/landing" element={<Landing/>}/>
+    </Routes>
+  </AnimatePresence>
   )
 }
 

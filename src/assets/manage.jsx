@@ -27,6 +27,7 @@ import ModelNathan from "./image/A7207756.webp";
 import Benefit2 from './image/benefit2.webp'
 import Benefit3 from './image/benefit3.webp'
 import ClientTemporaryVideo from './videos/ClientTemporary.mp4'
+import BTSTemporary from './videos/BTSTemporary.mp4'
 
 import Jose1 from "./models/Jose1.webp";
 import Jose2 from './models/Jose2.webp'
@@ -110,6 +111,7 @@ import PlaceNathan from "./placeholder/PlaceNathan.webp";
 import PlaceNada from "./placeholder/A7209309.webp";
 
 export {
+  BTSTemporary,
   ClientTemporaryVideo,
   Benefit2,
   Benefit3,
