@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
+import Adsform from '../../components/adsform/adsform'
 import Behind from "../../components/behind/behind"
 import Benefit from "../../components/benefit/benefit"
 import Client from "../../components/client/client"
@@ -21,16 +22,19 @@ function Landing() {
       element?.scrollIntoView()
     }
   }
+  
 
   useEffect(()=>{
     if (location !== '' || location !== null) {
       gotoElement();
     }
   },[location])
-  
+
+
   return (
     <>
       <FABwa/>
+      <Adsform/>
       <Navbar/>
       <Hero/>
       <Logoclient/>
