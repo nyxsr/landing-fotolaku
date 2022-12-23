@@ -20,7 +20,11 @@ function Hero() {
         .
       </h1>
       <div className="pt-10 flex flex-col gap-2">
-        <button className="bg-[#fd8703] w-fit py-3 px-[2.657rem] rounded-xl text-white font-semibold">Let's Talk</button>
+        <button onClick={() =>
+        (window.location.href = `https://wa.me/6281394683395?text=${encodeURIComponent(
+          "Halo semuanya!"
+        )}`)
+      } className="bg-[#fd8703] w-fit py-3 px-[2.657rem] rounded-xl text-white font-semibold">Let's Talk</button>
         <p className="text-[#747474] text-sm">with our creative consultant</p>
       </div>
       <div className="flex gap-[0.875rem] pt-4">

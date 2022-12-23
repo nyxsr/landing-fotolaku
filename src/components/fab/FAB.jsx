@@ -1,10 +1,16 @@
 import React from "react";
 import { FABwa } from "../../assets/manage";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 function FAB() {
   return (
     <motion.div
+      onClick={() =>
+        (window.location.href = `https://wa.me/6281394683395?text=${encodeURIComponent(
+          "Halo semuanya!"
+        )}`)
+      }
       animate={{
         y: [0, -10, 0],
         transition: {
@@ -21,7 +27,7 @@ function FAB() {
           damping: 5,
         },
       }}
-      dragConstraints={{ left:0,right:0,top:0,bottom:0 }}
+      dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
       drag
       className="fixed bottom-0 right-0 z-50"
     >
