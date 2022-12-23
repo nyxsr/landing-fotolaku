@@ -1,9 +1,17 @@
 import { AnimatePresence } from "framer-motion"
+import { isMobile } from "react-device-detect"
 import { BrowserRouter, Navigate, Route, Routes, useLocation } from "react-router-dom"
 import Landing from "./pages/landing/landing"
 import ModelDetails from "./pages/model/model"
 
 function App() {
+  if (!isMobile) {
+    return(
+        <section className="flex flex-col justify-center items-center h-screen gap-5">
+          <p className="text-3xl">Silahkan Buka Di Handphone anda ya</p>
+        </section>
+    )
+}
   return (
     <BrowserRouter>
       <AnimatedRoutes/>
