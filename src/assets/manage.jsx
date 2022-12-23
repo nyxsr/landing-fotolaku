@@ -34,7 +34,7 @@ import ModelWardah from "./image/A7203263.webp";
 import ModelNathan from "./image/A7207756.webp";
 import Benefit2 from "./image/benefit2.webp";
 import Benefit3 from "./image/benefit3.webp";
-import ClientTemporaryVideo from "./videos/ClientTemporary.mp4";
+import ClientTemporaryVideo from "./videos/ClientTemporary.webm";
 import BTSTemporary from "./videos/BTSTemporary.mp4";
 
 import Jose1 from "./models/Jose1.webp";
