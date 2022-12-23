@@ -1,4 +1,5 @@
 import Benefit from "./components/benefit/benefit"
+import Client from "./components/client/client"
 import Copywriting from "./components/copywriting/copywriting"
 import ElevatePitch from "./components/elevatepitch/ElevatePitch"
 import FABwa from "./components/fab/FAB"
@@ -18,6 +19,7 @@ function App() {
       <Copywriting/>
       <Process/>
       <Benefit/>
+      <Client/>
     </div>
   )
 }

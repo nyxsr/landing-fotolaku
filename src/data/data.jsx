@@ -1,9 +1,10 @@
 import {
-    Connie1,
-    Connie2,
-    Connie3,
-    Connie4,
-    Dio1,
+  ClientTemporaryVideo,
+  Connie1,
+  Connie2,
+  Connie3,
+  Connie4,
+  Dio1,
   Dio2,
   Dio3,
   Dio4,
@@ -289,5 +290,23 @@ export const DataModel = [
         dada: 32,
       },
     },
+  },
+];
+
+export const DataClient = [
+  {
+    id: 1,
+    rating: 5,
+    src: ClientTemporaryVideo,
+  },
+  {
+    id: 2,
+    rating: 3,
+    src: ClientTemporaryVideo,
+  },
+  {
+    id: 3,
+    rating: 4,
+    src: ClientTemporaryVideo,
   },
 ];
