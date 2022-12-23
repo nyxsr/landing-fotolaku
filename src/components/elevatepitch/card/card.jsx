@@ -1,5 +1,6 @@
 import React from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { ProcessDelivery } from "../../../assets/manage";
 
 function Card() {
   return (
@@ -7,7 +8,7 @@ function Card() {
       <LazyLoadImage
         width={198}
         height={244}
-        src='https://source.unsplash.com/198x244'
+        src={ProcessDelivery}
         className="w-full h-full object-cover rounded-2xl z-0"
         alt="1"
       />

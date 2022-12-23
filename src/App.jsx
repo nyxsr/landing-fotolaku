@@ -1,8 +1,10 @@
 import { AnimatePresence } from "framer-motion"
+import { lazy } from "react"
 import { isMobile } from "react-device-detect"
 import { BrowserRouter, Navigate, Route, Routes, useLocation } from "react-router-dom"
 import Landing from "./pages/landing/landing"
-import ModelDetails from "./pages/model/model"
+
+const ModelDetails = lazy(()=> import('./pages/model/model'))
 
 function App() {
   if (!isMobile) {

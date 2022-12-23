@@ -9,8 +9,6 @@ function Adsform() {
 
   const [isShow, setShow] = useState(true);
 
-  //   let countdownEndTime = Date.now("December 31, 2022 12:00:00");
-
   useEffect(() => {
     const countdownInterval = setInterval(() => {
       setSecond(second - 1);
