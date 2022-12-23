@@ -17,10 +17,10 @@ function ElevatePitch() {
       </div>
       <section className="px-6 font-semibold relative">
         <div className="absolute w-[80%] h-full">
-          <img className="absolute right-20" src={Detail1} alt="" />
-          <img className="absolute bottom-0" src={Detail2} alt="" />
-          <img className="absolute right-0 bottom-20" src={Star1}/>
-          <img className="absolute right-10" src={Star2}/>
+          <img className="absolute right-20" loading="lazy" src={Detail1} alt="" />
+          <img className="absolute bottom-0" loading="lazy" src={Detail2} alt="" />
+          <img className="absolute right-0 bottom-20" loading="lazy" src={Star1}/>
+          <img className="absolute right-10" loading="lazy" src={Star2}/>
         </div>
         <div className="relative z-10">
         <p>Tahukah Kamu ?</p>

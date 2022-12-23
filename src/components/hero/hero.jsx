@@ -36,7 +36,7 @@ function Hero() {
         </div>
       </div>
     </section>
-    <img src={ImageHero} className='mt-14 w-full h-full object-fill' alt="" />
+    <img src={ImageHero} className='mt-14 w-full h-full object-fill' loading="lazy" alt="" />
     </>
   );
 }

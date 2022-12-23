@@ -23,7 +23,7 @@ function Logoclient() {
 function Logos(props) {
   return(
     <div className='w-20'>
-      <img src={props.image} alt="" />
+      <img src={props.image} loading='lazy' alt="" />
     </div>
   )
 }
