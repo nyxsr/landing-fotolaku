@@ -8,9 +8,8 @@ function Client() {
     <section className="pl-6">
       <div className="flex flex-col justify-center items-center text-2xl font-semibold py-9">
         <h1>LIHAT KATA</h1>
-        <div className="relative inline-block w-fit">
+        <div className="relative bg-[#fd8703] text-white px-1 inline-block w-fit">
           CLIENT TENTANG KAMI
-          <div className="absolute bottom-0 bg-[#FD8703] w-full h-1/2 px-1 -z-10" />
         </div>
       </div>
       <div className="overflow-x-scroll">

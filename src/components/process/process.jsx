@@ -58,9 +58,9 @@ function Process() {
     <section>
       <div className="flex flex-col justify-center items-center text-2xl font-semibold py-9">
         <h1>PROSES</h1>
-        <div className="relative inline-block w-fit">
+        <div className="relative bg-[#fd8703] px-1 text-white inline-block w-fit">
           ALUR KERJA FOTOLAKU
-          <div className="absolute bottom-0 bg-[#FD8703] w-full h-1/2 px-1 -z-10"></div>
+
         </div>
       </div>
       <div className="flex py-5 justify-center flex-wrap gap-5">

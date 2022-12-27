@@ -7,16 +7,8 @@ function Hero() {
     <>
     <section className="px-[1.32rem]">
       <h1 className="text-2xl font-semibold">
-        Urus foto{" "}
-        <div className="relative inline-block w-fit">
-          produk dari rumah
-          <div className="absolute bottom-0 bg-[#FD8703] w-full h-1/2 px-1 -z-10"></div>
-        </div>
-        , Fotolaku tahu apa yang brandmu{" "}
-        <div className="relative inline-block w-fit">
-          butuhkan
-          <div className="absolute bottom-0 bg-[#FD8703] w-full h-1/2 px-1 -z-10"></div>
-        </div>
+        Urus foto <span className="bg-[#fd8703] text-white px-1">produk dari rumah</span>
+        , Fotolaku tahu apa yang brandmu <span className="bg-[#fd8703] text-white px-1">butuhkan</span>
         .
       </h1>
       <div className="pt-10 flex flex-col gap-2">
@@ -36,7 +28,7 @@ function Hero() {
         </div>
       </div>
     </section>
-    <img src={ImageHero} className='mt-14 w-full h-full object-fill' loading="lazy" alt="" />
+    <img src={ImageHero} className='mt-8 w-full h-full object-fill' loading="lazy" alt="" />
     </>
   );
 }

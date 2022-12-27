@@ -4,7 +4,7 @@ import Card from "./card/card";
 
 function ElevatePitch() {
   return (
-    <section className="py-11">
+    <section className="pt-1 pb-11">
       <h2 className="text-center text-xl w-[80%] mx-auto">
         Brand hebat dimulai dari visual berkualitas
       </h2>
