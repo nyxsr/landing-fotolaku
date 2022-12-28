@@ -1,15 +1,19 @@
 import React from "react";
 import {FaInstagram, FaTiktok} from 'react-icons/fa'
 import { ImageHero } from "../../assets/manage";
+import { motion } from "framer-motion";
 
 function Hero() {
   return (
     <>
     <section className="px-[1.32rem]">
       <h1 className="text-2xl font-semibold">
-        Urus foto <span className="bg-[#fd8703] text-white px-1">produk dari rumah</span>
-        , Fotolaku tahu apa yang brandmu <span className="bg-[#fd8703] text-white px-1">butuhkan</span>
-        .
+        <motion.span initial={{ opacity:0 }} animate={{ opacity:1, transition:{ delay:.5, duration:.5} }}>
+        Urus foto <motion.span className="bg-[#fd8703] text-white px-1">produk dari rumah</motion.span>
+        </motion.span>
+        <motion.span  initial={{ opacity:0 }} animate={{ opacity:1, transition:{ delay:1, duration:.5} }}>
+        , Fotolaku tahu apa yang brandmu <motion.span className="bg-[#fd8703] text-white px-1">butuhkan.</motion.span>
+        </motion.span>
       </h1>
       <div className="pt-10 flex flex-col gap-2">
         <button onClick={() =>

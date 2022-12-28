@@ -78,7 +78,7 @@ function Adsform() {
           </p>
           <div className="flex justify-center">
             <button
-              className="bg-white py-[0.625rem] px-14 rounded-xl text-[#fd8703]"
+              className="bg-white py-[0.625rem] px-14 mb-5 rounded-xl text-[#fd8703]"
               onClick={() =>
                 (window.location.href =
                   "https://fotolaku.com/landingpage/ads-form/")

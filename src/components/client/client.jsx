@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import { FaPlay } from "react-icons/fa";
 import { AiOutlineStar,AiFillStar } from 'react-icons/ai'
 import { DataClient } from "../../data/data";
@@ -15,7 +15,7 @@ function Client() {
       <div className="overflow-x-scroll">
         <div className="flex flex-nowrap py-6 gap-4 w-fit">
             {DataClient.map((v,i)=>{
-                return <Card key={i} rating={v.rating} video={v.src}/>
+                return <Card key={i} id={i+1} rating={v.rating} video={v.src}/>
             })}
         </div>
       </div>
@@ -24,15 +24,36 @@ function Client() {
 }
 
 function Card(props) {
+  const [isPlay, setPlay] = useState(false);
+  const vidRef = useRef(null)
+
+  const playPauseVideo = (e) => {
+    if (isPlay === false) {
+      const videos = document.getElementsByClassName('video')
+      Array.prototype.forEach.call(videos, video =>{
+        video.pause();
+      })
+      setPlay(true);
+      vidRef.current.play();
+    } else {
+      setPlay(false);
+      vidRef.current.pause();
+    }
+  };
+
+
+
   return (
     <div className="bg-white py-2 pl-[0.5285rem] rounded-xl flex gap-2 items-center shadow-xl">
       <div className="relative w-[19.875rem] h-[8.875rem] rounded-xl">
-        <video className="w-[19.875rem] h-[8.875rem] object-cover rounded-xl">
+        <video onClick={playPauseVideo} id={props.id} ref={vidRef} className="video w-[19.875rem] h-[8.875rem] object-cover rounded-xl">
           <source src={props.video} />
         </video>
-        <div className="bg-black/30 absolute flex justify-center items-center top-0 w-full h-full rounded-xl">
+        {isPlay === false && (
+        <div onClick={playPauseVideo} className="bg-black/30 absolute flex justify-center items-center top-0 w-full h-full rounded-xl">
           <FaPlay color="#fff" size={30} />
         </div>
+        )}
       </div>
       <div>
         <small className="text-sm">20 Januari 2023</small>
