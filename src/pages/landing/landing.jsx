@@ -7,10 +7,12 @@ import Client from "../../components/client/client"
 import Copywriting from "../../components/copywriting/copywriting"
 import ElevatePitch from "../../components/elevatepitch/ElevatePitch"
 import FABwa from "../../components/fab/FAB"
+import Footer from '../../components/footer/footer'
 import Hero from "../../components/hero/hero"
 import Logoclient from "../../components/logoclient/logoclient"
 import Navbar from "../../components/navbar/navbar"
 import Process from "../../components/process/process"
+import Services from '../../components/services/services'
 
 function Landing() {
   const location = useLocation()
@@ -37,13 +39,15 @@ function Landing() {
       <Adsform/>
       <Navbar/>
       <Hero/>
-      <Logoclient/>
       <ElevatePitch/>
+      <Logoclient/>
       <Copywriting/>
       <Process/>
+      <Services/>
       <Benefit/>
       <Client/>
       <Behind/>
+      <Footer/>
     </>
   )
 }

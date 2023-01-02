@@ -1,0 +1,67 @@
+import React from 'react'
+import { AiFillStar } from 'react-icons/ai'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
+import { useNavigate } from 'react-router-dom'
+import { DataService } from '../../data/data'
+import {BsArrowDownRight} from 'react-icons/bs'
+
+function Services() {
+    const videoService = DataService.filter(v => v.category === 'Video')
+    const photoService = DataService.filter(v => v.category !== 'Video')
+  return (
+    <section id="services" className="relative bg-[#1c1c1c] py-10 px-5 z-10">
+    <h1 className="font-bold text-3xl text-white">Our Services</h1>
+    <p className="text-[#9d9d9d]">Services yang Fotolaku sediakan untuk kamu yang memiliki brand </p>
+    <h1 className="font-bold text-2xl pt-5 text-white">Photo Services</h1>
+    <div className="overflow-x-scroll">
+      <div className="flex flex-nowrap py-6 gap-4 w-fit">
+        {photoService.map((v,i)=>{
+            return <Card key={i} id={i} foto={v.foto} placeholder={v.placeholder} price={v.price} text={v.text} rating={v.rating} desc={v.desc} />
+        })}
+      </div>
+    </div>
+    <h1 className="font-bold text-2xl pt-5 text-white">Video Services</h1>
+    <div className="overflow-x-scroll">
+      <div className="flex flex-nowrap py-6 gap-4 w-fit">
+        {videoService.map((v,i)=>{
+            return <Card key={i} id={i + 6} foto={v.foto} placeholder={v.placeholder} price={v.price} text={v.text} rating={v.rating} desc={v.desc} />
+        })}
+      </div>
+    </div>
+  </section>
+  )
+}
+
+export default Services
+
+function Card(props) {
+    const navigate = useNavigate();
+    return (
+        <div className="relative bg-white flex flex-col rounded-2xl py-3 px-3" onClick={()=>navigate(`/details/${props.id}`)}>
+          <div className='relative'>
+
+        <LazyLoadImage
+          width={212}
+          height={199}
+          src={props.foto}
+          placeholderSrc={props.placeholder}
+          effect="blur"
+          className="w-[13.25rem] h-[12.4375rem] object-cover rounded-2xl"
+          alt={props.text}
+          />
+        <div className='absolute -bottom-2 bg-[#fd8703] text-xl text-white py-2 px-2 rounded-full right-0'>
+          <BsArrowDownRight/>
+        </div>
+          </div>
+        <p className="text-lg font-bold pt-[14px]">{props.text}</p>
+        <div className="flex justify-between">
+          <p className="font-bold text-[#FD8703]">{props.price}</p>
+          <div className="flex items-center">
+            <AiFillStar color="#fd8703" />
+            <p className="font-semibold">{props.rating}</p>
+          </div>
+        </div>
+        <p className="text-[#747474] text-[12px]">{props.desc.length > 10 ? props.desc.substring(0,30)+'...' : props.desc}</p>
+      </div>
+    )
+}

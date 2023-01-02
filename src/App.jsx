@@ -4,6 +4,7 @@ import { isMobile } from "react-device-detect"
 import { BrowserRouter, Navigate, Route, Routes, useLocation } from "react-router-dom"
 import Landing from "./pages/landing/landing"
 
+const Details = lazy(()=>import('./pages/details/details'))
 const ModelDetails = lazy(()=> import('./pages/model/model'))
 
 function App() {
@@ -31,6 +32,7 @@ function AnimatedRoutes() {
 
       //* Registered Path
       <Route path="/landing" element={<Landing/>}/>
+      <Route path="/details/:id" element={<Details/>}/>
       <Route path="/model/:id" element={<ModelDetails/>}/>
     </Routes>
   </AnimatePresence>

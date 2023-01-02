@@ -11,6 +11,7 @@ function Card(props) {
         width={180}
         height={206}
         src={props.photo}
+        className='rounded-2xl w-[180px] h-[206px]'
       />
       <p className="absolute text-3xl font-bold text-white top-3 left-3">
         0{props.number}

@@ -13,6 +13,7 @@ import Logo8 from "./icons/8.webp";
 import Logo9 from "./icons/9.webp";
 import Logo10 from "./icons/10.webp";
 
+import VideoCreative from './image/VideoCreative.webp'
 import ImageHero from "./image/bg-hero.webp";
 import ProcessConsult from "./image/ProcessConsult.webp";
 import ProcessDelivery from "./image/ProcessDelivery.webp";
@@ -36,6 +37,31 @@ import Benefit2 from "./image/benefit2.webp";
 import Benefit3 from "./image/benefit3.webp";
 import ClientTemporaryVideo from "./videos/ClientTemporary.webm";
 import BTSTemporary from "./videos/BTSTemporary.mp4";
+
+import PlainServicePhoto from "./image/A7202354.webp";
+import LookbookServicePhoto from "./image/A7209602.webp";
+import BeautyServicePhoto from "./image/A7203153.webp";
+import CreativeServicePhoto from './image/A7209175.webp'
+import ProductWhiteServicePhoto from './image/ProdInWhite.webp'
+import DigitalImageServicePhoto from './image/digitalImaging.webp'
+import ProductThreeServicePhoto from './image/Prodthreed.webp'
+import VideoCatServicePhoto from './image/VideoCatalogue.webp'
+
+import Item1 from './image/Item1.webp'
+import Item2 from './image/Item2.webp'
+import Item3 from './image/Item3.webp'
+import Item4 from './image/Item4.webp'
+import Item5 from './image/Item5.webp'
+import Item6 from './image/Item6.webp'
+import Item7 from './image/Item7.webp'
+import Item8 from './image/Item8.webp'
+import Item9 from './image/Item9.webp'
+import Item10 from './image/Item10.webp'
+import Item11 from './image/Item11.webp'
+import Item12 from './image/Item12.webp'
+import Item13 from './image/Item13.webp'
+import Item14 from './image/Item14.webp'
+import Item15 from './image/Item15.webp'
 
 import Jose1 from "./models/Jose1.webp";
 import Jose2 from "./models/Jose2.webp";
@@ -117,7 +143,50 @@ import PlaceConny from "./placeholder/A7208962.webp";
 import PlaceNathan from "./placeholder/PlaceNathan.webp";
 import PlaceNada from "./placeholder/A7209309.webp";
 
+import PlacePlain from "./placeholder/A7202354.webp";
+import PlaceBeauty from "./placeholder/A7203153.webp";
+import PlaceCreative from "./placeholder/A7209175.webp";
+import PlaceLookbook from "./placeholder/A7209602.webp";
+import PlaceDigital from './placeholder/digitalImaging.webp'
+import PlaceWhite from './placeholder/ProdInWhite.webp'
+import PlaceThree from './placeholder/Prodthreed.webp'
+import PlaceVideo from './placeholder/VideoCatalogue.webp'
+import PlaceVidCreative from './placeholder/VideoCreative.webp'
+
 export {
+  PlaceVidCreative,
+  PlaceBeauty,
+  PlaceCreative,
+  PlaceDigital,
+  PlaceLookbook,
+  PlacePlain,
+  PlaceThree,
+  PlaceVideo,
+  PlaceWhite,
+  PlainServicePhoto,
+  LookbookServicePhoto,
+  BeautyServicePhoto,
+  CreativeServicePhoto,
+  VideoCatServicePhoto,
+  DigitalImageServicePhoto,
+  ProductThreeServicePhoto,
+  ProductWhiteServicePhoto,
+  VideoCreative,
+  Item1,
+  Item2,
+  Item3,
+  Item4,
+  Item5,
+  Item6,
+  Item7,
+  Item8,
+  Item9,
+  Item10,
+  Item11,
+  Item12,
+  Item13,
+  Item14,
+  Item15,
   Logo1,
   Logo2,
   Logo3,
