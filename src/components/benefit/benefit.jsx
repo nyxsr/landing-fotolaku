@@ -2,7 +2,9 @@ import React from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { DataBenefit, DataModel } from "../../data/data";
 import "react-lazy-load-image-component/src/effects/blur.css";
-import { Benefit2 } from "../../assets/manage";
+import { Benefit2, Model, MUA } from "../../assets/manage";
+import {SiAwesomelists} from 'react-icons/si'
+import {GiDelicatePerfume} from 'react-icons/gi'
 import { Link } from "react-router-dom";
 import { BsArrowDownRight, BsFillCameraFill } from "react-icons/bs";
 
@@ -68,7 +70,7 @@ function CardBenefit(props) {
       {props.id === 2 && (
         <div className="flex flex-col gap-4 items-center justify-center">
           {props.detail.map((v,i)=>{
-            return <DetailBenefit key={i} text={v.text}/>
+            return <DetailBenefit key={i} id={i} text={v.text}/>
           })}
         </div>
       )}
@@ -79,8 +81,8 @@ function CardBenefit(props) {
 function DetailBenefit(props) {
   return(
     <>
-     <div className="bg-[#fd8703] rounded-full py-4 px-4 text-4xl text-white">
-            <BsFillCameraFill />
+     <div className="bg-[#fd8703] w-[6rem] h-[6rem] flex justify-center items-center rounded-full py-4 px-4 text-4xl text-white">
+            {props.id === 0 ? <img src={MUA}/> : props.id === 1 ? <BsFillCameraFill /> : <img src={Model}/>}
           </div>
           <p>{props.text}</p>
     </>

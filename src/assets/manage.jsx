@@ -12,6 +12,8 @@ import Logo6 from "./icons/6.webp";
 import Logo8 from "./icons/8.webp";
 import Logo9 from "./icons/9.webp";
 import Logo10 from "./icons/10.webp";
+import MUA from './icons/MUA.webp'
+import Model from './icons/Model.webp'
 
 import VideoCreative from './image/VideoCreative.webp'
 import ImageHero from "./image/bg-hero.webp";
@@ -154,6 +156,8 @@ import PlaceVideo from './placeholder/VideoCatalogue.webp'
 import PlaceVidCreative from './placeholder/VideoCreative.webp'
 
 export {
+  MUA,
+  Model,
   PlaceVidCreative,
   PlaceBeauty,
   PlaceCreative,

@@ -1,6 +1,5 @@
 import {
   BeautyServicePhoto,
-  ClientTemporaryVideo,
   Connie1,
   Connie2,
   Connie3,
@@ -338,18 +337,35 @@ export const DataModel = [
 export const DataClient = [
   {
     id: 1,
-    rating: 5,
-    src: ClientTemporaryVideo,
+    src: Logo1
   },
   {
     id: 2,
-    rating: 3,
-    src: ClientTemporaryVideo,
+    src: Logo2
   },
   {
     id: 3,
-    rating: 4,
-    src: ClientTemporaryVideo,
+    src: Logo3
+  },
+  {
+    id: 4,
+    src: Logo5
+  },
+  {
+    id: 5,
+    src: Logo6
+  },
+  {
+    id: 6,
+    src: Logo8
+  },
+  {
+    id: 7,
+    src: Logo9
+  },
+  {
+    id: 8,
+    src: Logo10
   },
 ];
 
