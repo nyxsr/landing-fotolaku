@@ -95,9 +95,11 @@ function CardBenefit(props) {
 function DetailBenefit(props) {
   return(
     <>
-     <div className="bg-[#fd8703] w-[6rem] h-[6rem] flex justify-center items-center rounded-full py-4 px-4 text-4xl text-white">
+     <motion.div variants={DetailBenefitAnimate} whileTap={{ scale:.9, transition:{
+      type:'spring',stiffness: 500, damping: 2
+     } }} className="bg-[#fd8703] w-[6rem] h-[6rem] flex justify-center items-center rounded-full py-4 px-4 text-4xl text-white">
             {props.id === 0 ? <img src={Model}/> : props.id === 1 ? <BsFillCameraFill /> : <img src={MUA}/>}
-          </div>
+          </motion.div>
           <p>{props.text}</p>
     </>
   )
