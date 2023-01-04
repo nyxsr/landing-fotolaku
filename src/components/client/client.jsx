@@ -11,7 +11,7 @@ function Client() {
         </div>
       </div>
       <div className="overflow-x-scroll">
-        <div className="flex flex-nowrap py-6 gap-4 w-fit ml-6">
+        <div className="flex flex-nowrap py-6 gap-4 w-fit mx-6">
             {DataClient.map((v,i)=>{
                 return <Card key={i} id={i+1} brand={v.brand} text={v.text} />
             })}
