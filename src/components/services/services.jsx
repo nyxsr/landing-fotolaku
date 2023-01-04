@@ -49,9 +49,6 @@ function Card(props) {
           className="w-[13.25rem] h-[12.4375rem] object-cover rounded-2xl"
           alt={props.text}
           />
-        <div className='absolute -bottom-2 bg-[#fd8703] text-xl text-white py-2 px-2 rounded-full right-0'>
-          <BsArrowDownRight/>
-        </div>
           </div>
         <p className="text-lg font-bold pt-[14px]">{props.text}</p>
         <div className="flex justify-between">
@@ -61,7 +58,9 @@ function Card(props) {
             <p className="font-semibold">{props.rating}</p>
           </div>
         </div>
-        <p className="text-[#747474] text-[12px]">{props.desc.length > 10 ? props.desc.substring(0,30)+'...' : props.desc}</p>
+        <div className="flex bg-[#fd8703] py-2 rounded-lg mt-2 items-center justify-center gap-3">
+       <button className=' font-bold text-white'>See Details</button>
+        </div>
       </div>
     )
 }

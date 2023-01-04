@@ -1,14 +1,16 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { DataBenefit, DataModel } from "../../data/data";
 import "react-lazy-load-image-component/src/effects/blur.css";
-import { Benefit2, Model, MUA } from "../../assets/manage";
-import {SiAwesomelists} from 'react-icons/si'
-import {GiDelicatePerfume} from 'react-icons/gi'
-import { Link } from "react-router-dom";
-import { BsArrowDownRight, BsFillCameraFill } from "react-icons/bs";
+import { Model, MUA } from "../../assets/manage";
+import { useNavigate } from "react-router-dom";
+import { motion, useAnimation } from "framer-motion";
+import { BsFillCameraFill } from "react-icons/bs";
+import { BenefitAnimate, CardModelAnimate, DetailBenefitAnimate } from "../../assets/animation/animate";
+import { useInView } from "react-intersection-observer";
 
 function Benefit() {
+ 
   return (
     <section id="benefit" className="px-6 py-8 bg-[#eceeed]">
       <h1 className="text-[22px] font-semibold text-[#fd8703]">
@@ -25,9 +27,12 @@ function Benefit() {
           })}
         </div>
       </div>
+      <p className="text-center font-bold text-[#fd8703]">Silahkan klik untuk melihat model kami!</p>
+      <motion.div variants={BenefitAnimate} initial='hidden' whileInView='visible'>
       {DataBenefit.map((v, i) => {
         return <CardBenefit key={i} detail={v.detail} text={v.text} id={v.id} desc={v.desc} />;
       })}
+      </motion.div>
     </section>
   );
 }
@@ -35,11 +40,23 @@ function Benefit() {
 export default Benefit;
 
 function Card(props) {
+  const navigate = useNavigate()
+  const cardmodelcontrols = useAnimation();
+
+  useEffect(()=>{
+    cardmodelcontrols.start('visible')
+  },[])
+
   return (
-    <Link
+    <div
       className="w-[12.375rem] h-[15.25rem] relative"
-      to={`/model/${props.id}`}
+      onClick={()=>navigate(`/model/${props.id}`)}
     >
+      {props.id === 0 && (
+        <motion.div variants={CardModelAnimate} initial='hidden' animate={cardmodelcontrols} whileInView='startHidden' className="bg-[#fd8703]/80 absolute z-10 right-0 flex rounded-r-2xl justify-center items-center h-full w-1/2">
+          <motion.p variants={CardModelAnimate} className="text-white text-center px-2 font-bold">Click to see more!</motion.p>
+        </motion.div>
+      )}
       <LazyLoadImage
         width={198}
         height={244}
@@ -53,16 +70,13 @@ function Card(props) {
       <p className="absolute bottom-5 left-3 z-10 text-white font-bold text-xl">
         {props.text}
       </p>
-      <div className="absolute bottom-5 bg-[#fd8703] text-2xl text-white py-2 px-2 rounded-full right-5">
-        <BsArrowDownRight />
-      </div>
-    </Link>
+    </div>
   );
 }
 
 function CardBenefit(props) {
   return (
-    <div className="py-6 flex gap-2 flex-col">
+    <motion.div variants={DetailBenefitAnimate} className="py-6 flex gap-2 flex-col">
       <h2 className="text-xl font-semibold">
         {props.id}. {props.text}
       </h2>
@@ -74,7 +88,7 @@ function CardBenefit(props) {
           })}
         </div>
       )}
-    </div>
+    </motion.div>
   );
 }
 
@@ -82,7 +96,7 @@ function DetailBenefit(props) {
   return(
     <>
      <div className="bg-[#fd8703] w-[6rem] h-[6rem] flex justify-center items-center rounded-full py-4 px-4 text-4xl text-white">
-            {props.id === 0 ? <img src={MUA}/> : props.id === 1 ? <BsFillCameraFill /> : <img src={Model}/>}
+            {props.id === 0 ? <img src={Model}/> : props.id === 1 ? <BsFillCameraFill /> : <img src={MUA}/>}
           </div>
           <p>{props.text}</p>
     </>

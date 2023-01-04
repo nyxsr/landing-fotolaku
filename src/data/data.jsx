@@ -5,6 +5,11 @@ import {
   Connie3,
   Connie4,
   CreativeServicePhoto,
+  DI1,
+  DI2,
+  DI3,
+  DI4,
+  DI5,
   DigitalImageServicePhoto,
   Dio1,
   Dio2,
@@ -113,24 +118,72 @@ import {
   Wardah3,
   Wardah4,
 } from "../assets/manage";
-import { Beauty1, Beauty10, Beauty11, Beauty12, Beauty2, Beauty3, Beauty4, Beauty5, Beauty6, Beauty7, Beauty8, Beauty9, Creative1, Creative2, Creative3, Creative4, Creative5, Creative6, Creative7, Lookbook1, Lookbook10, Lookbook11, Lookbook12, Lookbook2, Lookbook3, Lookbook4, Lookbook5, Lookbook6, Lookbook7, Lookbook8, Lookbook9, Plain1, Plain10, Plain11, Plain12, Plain2, Plain3, Plain4, Plain5, Plain6, Plain7, Plain8, Plain9, Pow1, Pow2, Pow3 } from "../assets/portofolio/portfolio";
+import {
+  Beauty1,
+  Beauty10,
+  Beauty11,
+  Beauty12,
+  Beauty2,
+  Beauty3,
+  Beauty4,
+  Beauty5,
+  Beauty6,
+  Beauty7,
+  Beauty8,
+  Beauty9,
+  Creative1,
+  Creative2,
+  Creative3,
+  Creative4,
+  Creative5,
+  Creative6,
+  Creative7,
+  Lookbook1,
+  Lookbook10,
+  Lookbook11,
+  Lookbook12,
+  Lookbook2,
+  Lookbook3,
+  Lookbook4,
+  Lookbook5,
+  Lookbook6,
+  Lookbook7,
+  Lookbook8,
+  Lookbook9,
+  Plain1,
+  Plain10,
+  Plain11,
+  Plain12,
+  Plain2,
+  Plain3,
+  Plain4,
+  Plain5,
+  Plain6,
+  Plain7,
+  Plain8,
+  Plain9,
+  Pow1,
+  Pow2,
+  Pow3,
+} from "../assets/portofolio/portfolio";
 
 export const DataModel = [
   {
     foto: ModelNathan,
     placeholder: PlaceNathan,
-    text: "Nathan",
+    text: "Nathan Jo",
     bigPhoto: [Nathan1, Nathan2, Nathan3, Nathan4],
     bio: {
-      tinggi: 175,
+      tinggi: 178,
       umur: 22,
       ukuran: {
-        sepatu: 40,
+        sepatu: 43,
         baju: "L",
       },
       lebar: {
-        pinggang: 32,
-        dada: 32,
+        pinggang: 74,
+        panggul:86,
+        dada: 97,
       },
     },
   },
@@ -155,25 +208,26 @@ export const DataModel = [
   {
     foto: ModelJose,
     placeholder: PlaceJose,
-    text: "Jose",
+    text: "Jose Matt",
     bigPhoto: [Jose1, Jose2, Jose3, Jose4],
     bio: {
-      tinggi: 175,
+      tinggi: 181,
       umur: 22,
       ukuran: {
-        sepatu: 40,
+        sepatu: 43,
         baju: "L",
       },
       lebar: {
-        pinggang: 32,
-        dada: 32,
+        pinggang: 74,
+        panggul:86,
+        dada: 97,
       },
     },
   },
   {
     foto: ModelJessica,
     placeholder: PlaceJessica,
-    text: "Jessica",
+    text: "Jessica Cross",
     bigPhoto: [Jessica1, Jessica2, Jessica3, Jessica4],
     bio: {
       tinggi: 175,
@@ -183,8 +237,9 @@ export const DataModel = [
         baju: "L",
       },
       lebar: {
-        pinggang: 32,
-        dada: 32,
+        pinggang: 63,
+        panggul:88,
+        dada: 77,
       },
     },
   },
@@ -212,15 +267,15 @@ export const DataModel = [
     text: "Conny",
     bigPhoto: [Connie1, Connie4, Connie3, Connie2],
     bio: {
-      tinggi: 175,
+      tinggi: 160,
       umur: 22,
       ukuran: {
-        sepatu: 40,
-        baju: "L",
+        sepatu: 38,
+        baju: "S",
       },
       lebar: {
-        pinggang: 32,
-        dada: 32,
+        pinggang: 68,
+        dada: 74,
       },
     },
   },
@@ -266,15 +321,15 @@ export const DataModel = [
     text: "Kevin",
     bigPhoto: [Kevin1, Kevin2, Kevin3, Kevin4],
     bio: {
-      tinggi: 175,
-      umur: 22,
+      tinggi: 177,
+      umur: 24,
       ukuran: {
-        sepatu: 40,
-        baju: "L",
+        sepatu: 44,
+        baju: "L-XL",
       },
       lebar: {
-        pinggang: 32,
-        dada: 32,
+        pinggang: 84,
+        dada: 57,
       },
     },
   },
@@ -337,189 +392,299 @@ export const DataModel = [
 export const DataClient = [
   {
     id: 1,
-    src: Logo1
+    text: "Hasilnya bagus sesuai ekspektasi dan harganya juga affordable. Kualitas juga bagus. Good job👍🏼",
+    brand:"Majeed Streetwear"
   },
   {
     id: 2,
-    src: Logo2
+    text: "Honestly, beberapa kali project dengan FOTOLAKU puas sekali dgn servicenya. Hasil foto memuaskan sesuai dgn briefing😁",
+    brand:"Batik Keraton"
   },
   {
     id: 3,
-    src: Logo3
+    text: "Semuanya aman, puas banget sama hasilnya. Saya pasti balik lagi.",
+    brand:"SK69"
   },
   {
     id: 4,
-    src: Logo5
+    text: "Udah sering repeat order disini hasilnya keren banget.",
+    brand:"Guten"
   },
   {
     id: 5,
-    src: Logo6
+    text: "Hasil fotonya memuaskan banget.Good job!",
+    brand:"Jiniso"
   },
   {
     id: 6,
-    src: Logo8
+    text: "Wiiihh baguss bgt kak sukaa... FOTOLAKU kereen totalitas bgt❤️❤️",
+    brand:"Skala Bright"
   },
   {
     id: 7,
-    src: Logo9
+    text: "Okey kak mantapp bgt. Bagus bangett.",
+    brand:"Heelwa Vitabet"
   },
   {
     id: 8,
-    src: Logo10
+    text: "Bagus kak hasilnya mantap deh!",
+    brand:"Grya Apparel"
+  },
+  {
+    id: 9,
+    text: "Wah siaap fotonya mantap! Makasih kak!",
+    brand:"Outr"
+  },
+  {
+    id: 10,
+    text: "Keren banget kak hasilnya❤️",
+    brand:"FoulFouska"
+  },
+  {
+    id: 11,
+    text: "Hasil foto oke bgt modelnya kece. Udah 2x pesan disini nextnya mau coba konsep outdoornya😁",
+    brand:"Avventure_id"
   },
 ];
 
 export const DataLogoClient = [
   {
-    image:Logo1
+    image: Logo1,
   },
   {
-    image:Logo2
+    image: Logo2,
   },
   {
-    image:Logo3
+    image: Logo3,
   },
   {
-    image:Logo5
+    image: Logo5,
   },
   {
-    image:Logo6
+    image: Logo6,
   },
   {
-    image:Logo8
+    image: Logo8,
   },
   {
-    image:Logo9
+    image: Logo9,
   },
   {
-    image:Logo10
-  }
-]
+    image: Logo10,
+  },
+];
 
 export const DataBenefit = [
   {
-    id:2,
-    text:'Cara pemesanan gak ribet',
-    desc:'Tidak perlu cari fotografer, model dan MUA. Karena semuanya sudah disiapkan fotolaku!',
-    detail:[
+    id: 2,
+    text: "Cara pemesanan gak ribet",
+    desc: "Tidak perlu cari fotografer, model dan MUA. Karena semuanya sudah disiapkan fotolaku!",
+    detail: [
       {
-      text:'Gaperlu Siapin Model'
-    },
-    {
-      text:'Gaperlu siapin fotografer'
-    },
-    {
-      text:'Gaperlu siapin MUA/stylist'
-    }
-  ]
+        text: "Gaperlu Siapin Model",
+      },
+      {
+        text: "Gaperlu siapin fotografer",
+      },
+      {
+        text: "Gaperlu siapin MUA/stylist",
+      },
+    ],
   },
   {
-    id:3,
-    text:'Berpengalaman dan Profesional',
-    desc:'Gaperlu bingung pikirin konsep fotonya seperti apa, creative consultant kami siap membantu dan memberikan arahan'
-  }
-]
+    id: 3,
+    text: "Berpengalaman dan Profesional",
+    desc: "Gaperlu bingung pikirin konsep fotonya seperti apa, creative consultant kami siap membantu dan memberikan arahan",
+  },
+];
 
-export const DataImageElevate = [Item1,Item2,Item3,Item4,Item5,Item6,Item7,Item8,Item9,Item10,Item11,Item12,Item13,Item14,Item15]
-
+export const DataImageElevate = [
+  Item1,
+  Item2,
+  Item3,
+  Item4,
+  Item5,
+  Item6,
+  Item7,
+  Item8,
+  Item9,
+  Item10,
+  Item11,
+  Item12,
+  Item13,
+  Item14,
+  Item15,
+];
 
 export const DataService = [
   {
     foto: PlainServicePhoto,
-    category:'Photo',
+    category: "Photo",
     placeholder: PlacePlain,
     text: "Plain Catalogue",
     rating: 5,
-    price: "Rp.50.000 / pcs",
-    desc: "lorem ipsum dolor si amet.",
-    terms: ["lorem", "ipsum", "dolor"],
-    portoFoto: [Plain1,Plain2,Plain3,Plain4,Plain4,Plain5,Plain6,Plain7,Plain8,Plain9,Plain10,Plain11,Plain12],
+    price: "Rp.90.000 / pcs",
+    desc: "Foto bersama model dengan background putih polos",
+    terms: [
+      "Minimal Order 5 Produk",
+      "Untuk pose yang didapat adalah 1 Full Body, Setengah Badan, tampak depan, tampak belakang, serong kanan, serong kiri",
+      " Dapat memilih Background Pure White atau Light grey",
+      "Produk akan dikembalikan setelah project selesai.",
+    ],
+    portoFoto: [
+      Plain1,
+      Plain2,
+      Plain3,
+      Plain4,
+      Plain4,
+      Plain5,
+      Plain6,
+      Plain7,
+      Plain8,
+      Plain9,
+      Plain10,
+      Plain11,
+      Plain12,
+    ],
   },
   {
     foto: LookbookServicePhoto,
-    category:'Photo',
+    category: "Photo",
     placeholder: PlaceLookbook,
     text: "LookBook",
     rating: 4,
-    price: "Rp.50.000 / pcs",
-    desc: "lorem ipsum dolor si amet.",
-    terms: ["lorem", "ipsum", "dolor"],
-    portoFoto: [Lookbook1,Lookbook2,Lookbook3,Lookbook4,Lookbook5,Lookbook6,Lookbook7,Lookbook8,Lookbook9,Lookbook10,Lookbook11,Lookbook12],
+    price: "Rp.140.000 / pcs",
+    desc: "Foto bersama model dengan background berwarna & tema kreatif.",
+    terms: [
+      "Minimal 5 Produk",
+      "Satu Produk masing-masing Mendapatkan 5 Angle Fotq",
+      "Dapat request pose dan memilih 1 tem.",
+      "Produk akan dikembalikan setelah project selesai",
+    ],
+    portoFoto: [
+      Lookbook1,
+      Lookbook2,
+      Lookbook3,
+      Lookbook4,
+      Lookbook5,
+      Lookbook6,
+      Lookbook7,
+      Lookbook8,
+      Lookbook9,
+      Lookbook10,
+      Lookbook11,
+      Lookbook12,
+    ],
   },
   {
     foto: BeautyServicePhoto,
-    category:'Photo',
+    category: "Photo",
     placeholder: PlaceBeauty,
     text: "Beauty Shoot",
     rating: 4,
-    price: "Rp.50.000 / pcs",
-    desc: "lorem ipsum dolor si amet.",
-    terms: ["lorem", "ipsum", "dolor"],
-    portoFoto: [Beauty1,Beauty2,Beauty3,Beauty4,Beauty5,Beauty6,Beauty7,Beauty8,Beauty9,Beauty10,Beauty11,Beauty12],
+    price: "Rp.80.000 / pcs",
+    desc: "Foto bersama model untuk menampilkan kecantikan.",
+    terms: [
+      "Minimal order 10 foto",
+      "Dapat memilih salah satu model",
+      "Produk akan dikembalikan setelah project selesai.",
+    ],
+    portoFoto: [
+      Beauty1,
+      Beauty2,
+      Beauty3,
+      Beauty4,
+      Beauty5,
+      Beauty6,
+      Beauty7,
+      Beauty8,
+      Beauty9,
+      Beauty10,
+      Beauty11,
+      Beauty12,
+    ],
   },
   {
     foto: CreativeServicePhoto,
-    category:'Photo',
+    category: "Photo",
     placeholder: PlaceCreative,
     text: "Creative Shoot",
     rating: 4,
-    price: "Rp.50.000 / pcs",
-    desc: "lorem ipsum dolor si amet.",
-    terms: ["lorem", "ipsum", "dolor"],
-    portoFoto: [Creative1,Creative2,Creative3,Creative4,Creative5,Creative6,Creative7],
+    price: "Rp.45.000 / pcs",
+    desc: "Foto produk dengan konsep kreatif.",
+    terms: [
+      "Minimal order 10 Foto untuk maksimal 10 produk",
+      "Minimal pesan dapat dikombinasikan dengan plain product",
+      "Dapat memakai semua properti yang tersedia",
+      "Produk akan dikembalikan setelah project selesai",
+      "15k tambahan untuk lebih dari 10 produk",
+    ],
+    portoFoto: [
+      Creative1,
+      Creative2,
+      Creative3,
+      Creative4,
+      Creative5,
+      Creative6,
+      Creative7,
+    ],
   },
   {
     foto: ProductWhiteServicePhoto,
-    category:'Photo',
+    category: "Photo",
     placeholder: PlaceWhite,
     text: "Product On White",
     rating: 4,
-    price: "Rp.50.000 / pcs",
-    desc: "lorem ipsum dolor si amet.",
-    terms: ["lorem", "ipsum", "dolor"],
-    portoFoto: [Pow1,Pow2,Pow3],
+    price: "Rp.30.000 / foto",
+    desc: "Foto produk dengan background putih polos.",
+    terms: [
+      "Minimal order 10 foto",
+      "Dapat memilih salah satu background PURE WHITE/OFF WHITE",
+      "Produk akan dikembalikan setelah project selesai.",
+    ],
+    portoFoto: [Pow1, Pow2, Pow3],
   },
   {
     foto: DigitalImageServicePhoto,
-    category:'Photo',
+    category: "Photo",
     placeholder: PlaceDigital,
     text: "Digital Imaging",
     rating: 4,
-    price: "Rp.50.000 / pcs",
-    desc: "lorem ipsum dolor si amet.",
+    price: "Rp.200.000 / pcs",
+    desc: "Kreasi foto sesuai dengan imajinasi yang unik.",
     terms: ["lorem", "ipsum", "dolor"],
-    portoFoto: [],
+    portoFoto: [DI1, DI2, DI3, DI4, DI5],
   },
   {
     foto: ProductThreeServicePhoto,
-    category:'Video',
+    category: "Video",
     placeholder: PlaceThree,
     text: "Video 3D",
     rating: 4,
-    price: "Rp.50.000 / pcs",
-    desc: "lorem ipsum dolor si amet.",
+    price: "Rp.2,5 - 15++jt / Video",
+    desc: "Penciptaan video dama ruang digital 3D.",
     terms: ["lorem", "ipsum", "dolor"],
     portoFoto: [],
   },
   {
     foto: VideoCatServicePhoto,
-    category:'Video',
+    category: "Video",
     placeholder: PlaceVideo,
     text: "Video Catalogue",
     rating: 4,
     price: "Rp.50.000 / pcs",
-    desc: "lorem ipsum dolor si amet.",
+    desc: "video bersama model dengan konsep simpel.",
     terms: ["lorem", "ipsum", "dolor"],
     portoFoto: [],
   },
   {
     foto: VideoCreative,
-    category:'Video',
+    category: "Video",
     placeholder: PlaceVidCreative,
     text: "Video Creative",
     rating: 4,
-    price: "Rp.50.000 / pcs",
-    desc: "lorem ipsum dolor si amet.",
+    price: "Rp.1,5 - 20 jt / Video",
+    desc: "Video dengan konsep kreatif yang cocok untuk social media & iklan.",
     terms: ["lorem", "ipsum", "dolor"],
     portoFoto: [],
   },

@@ -21,37 +21,37 @@ function Process() {
       photo: ProcessEdit,
       placeholder: PlaceConsult,
       context: "Konsultasi",
-      desc: "Lorem ipsum dolor sit amet consectetur.",
+      desc: "Konsultasikan kebutuhan foto produkmu pada Creative Consultant untuk pemilihan paket foto, konsep, tema & model.",
     },
     {
       photo: ProcessDelivery,
       placeholder: PlaceDelivery,
       context: "Pengiriman",
-      desc: "Lorem ipsum dolor sit amet consectetur.",
+      desc: "Kirim produkmu ke kantor FOTOLAKU untuk dilakukan proses selanjutnya!",
     },
     {
       photo: ProcessIron,
       placeholder: PlaceIron,
       context: "Steam / Setrika",
-      desc: "Lorem ipsum dolor sit amet consectetur.",
+      desc: "Sebelum dilakukan photoshoot, produk akan dirapikan dengan steam profesional untuk mendapatkan foto produk yang lebih effortless",
     },
     {
       photo: ProcessPhoto,
       placeholder: PlacePhoto,
       context: "Photoshoot",
-      desc: "Lorem ipsum dolor sit amet consectetur.",
+      desc: "Proses photoshoot dilakukan sesuai dengan tanggal yang disepakati secara nyaman bersama fotografer profesional",
     },
     {
       photo: ProcessConsult,
       placeholder: PlaceEdit,
       context: "Editing",
-      desc: "Lorem ipsum dolor sit amet consectetur.",
+      desc: "Proses editing intensif dilakukan untuk mempercantik foto produk sehingga siap untuk di publish",
     },
     {
       photo: ProcessReturn,
       placeholder: PlaceReturn,
       context: "Pengembalian",
-      desc: "Lorem ipsum dolor sit amet consectetur.",
+      desc: "Pengembalian barang dilakukan H+1 photoshoot ke alamat klien",
     },
   ];
   return (

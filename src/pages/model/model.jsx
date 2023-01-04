@@ -109,7 +109,7 @@ function ModelDetails() {
     <section className="h-screen relative bg-white overflow-y-hidden overflow-x-hidden">
       <div className="ml-5">
         <div
-          className="text-4xl py-2 px-2 "
+          className="text-4xl py-2 px-2 z-50"
           onClick={() => navigate("/landing#benefit")}
         >
           <AiOutlineArrowLeft />

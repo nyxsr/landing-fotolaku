@@ -15,6 +15,11 @@ import Logo10 from "./icons/10.webp";
 import MUA from './icons/MUA.webp'
 import Model from './icons/Model.webp'
 
+import DI1 from './image/Di1.webp'
+import DI2 from './image/Di2.webp'
+import DI3 from './image/Di3.webp'
+import DI4 from './image/Di4.webp'
+import DI5 from './image/Di5.webp'
 import VideoCreative from './image/VideoCreative.webp'
 import ImageHero from "./image/bg-hero.webp";
 import ProcessConsult from "./image/ProcessConsult.webp";
@@ -156,6 +161,11 @@ import PlaceVideo from './placeholder/VideoCatalogue.webp'
 import PlaceVidCreative from './placeholder/VideoCreative.webp'
 
 export {
+  DI1,
+  DI2,
+  DI3,
+  DI4,
+  DI5,
   MUA,
   Model,
   PlaceVidCreative,

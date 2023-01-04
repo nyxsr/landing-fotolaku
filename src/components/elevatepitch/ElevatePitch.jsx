@@ -40,26 +40,19 @@ function ElevatePitch() {
         Brand hebat dimulai dari visual berkualitas
       </h2>
       <div className="overflow-x-scroll">
-        <div className="flex flex-nowrap px-6 py-6 -mt-5 w-fit gap-3">
+        <div className="flex flex-nowrap px-6 py-6 -mt-5 w-fit">
           {DataImageElevate.map((v,i)=>{
-            return <Card key={i} image={v}/>
+            return <Card key={i} id={i} image={v}/>
           })}
         </div>
       </div>
-      <h2 className="text-center px-5">
-        Dan kabar gembiranya untuk memiliki visual berkualitas tidak perlu
-        budget yang tinggi. Karena bersama fotolaku, kamu dapat memiliki
-        photoshoot yang{" "}
-        <div className="flex justify-center">
-          <p className="bg-[#b2beb5] px-2">mudah dan terjangkau.</p>
-        </div>
-      </h2>
-      <p className="text-center text-2xl mt-5 ">
-        Dengan hasil 
-        <div className=" w-screen flex justify-center">
-        <p className="bg-[#fd8703] rounded-md px-2">Foto Profesional!</p>
-        </div>
-      </p>
+      <p className="text-center px-5">
+        Dan kabar gembiranya untuk memiliki visual berkualitas <span className="bg-[#b2beb5]">tidak perlu
+        budget yang tinggi.</span></p> 
+        
+        <p className="text-center px-5 mt-3">Karena bersama fotolaku, kamu dapat memiliki
+        photoshoot yang</p>
+        <p className="text-center font-semibold text-[#fd8703] px-5 mt-3">mudah, terjangkau dan hasil foto profesional.</p>
     </section>
   );
 }

@@ -85,8 +85,10 @@ function Details() {
 
 function Terms(props) {
   return (
-    <div className="flex items-center gap-2 py-1">
-      <AiFillCheckCircle color="#fd8703" size={30} />
+    <div className="flex items-start gap-2 py-1">
+      <div>
+      <AiFillCheckCircle color="#fd8703" size={25} />
+      </div>
       <p className="text-white">{props.text}</p>
     </div>
   );
