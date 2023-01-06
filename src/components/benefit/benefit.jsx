@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { DataBenefit, DataModel } from "../../data/data";
 import "react-lazy-load-image-component/src/effects/blur.css";
@@ -7,7 +7,6 @@ import { useNavigate } from "react-router-dom";
 import { motion, useAnimation } from "framer-motion";
 import { BsFillCameraFill } from "react-icons/bs";
 import { BenefitAnimate, CardModelAnimate, DetailBenefitAnimate } from "../../assets/animation/animate";
-import { useInView } from "react-intersection-observer";
 
 function Benefit() {
  
@@ -28,7 +27,7 @@ function Benefit() {
         </div>
       </div>
       <p className="text-center font-bold text-[#fd8703]">Silahkan klik untuk melihat model kami!</p>
-      <motion.div variants={BenefitAnimate} initial='hidden' whileInView='visible'>
+      <motion.div>
       {DataBenefit.map((v, i) => {
         return <CardBenefit key={i} detail={v.detail} text={v.text} id={v.id} desc={v.desc} />;
       })}
@@ -76,17 +75,17 @@ function Card(props) {
 
 function CardBenefit(props) {
   return (
-    <motion.div variants={DetailBenefitAnimate} className="py-6 flex gap-2 flex-col">
+    <motion.div className="py-6 flex gap-2 flex-col">
       <h2 className="text-xl font-semibold">
         {props.id}. {props.text}
       </h2>
       <p>{props.desc}</p>
       {props.id === 2 && (
-        <div className="flex flex-col gap-4 items-center justify-center">
+        <motion.div variants={BenefitAnimate} initial='hidden' whileInView='visible' viewport={{ once:true }} className="flex flex-col gap-4 items-center justify-center">
           {props.detail.map((v,i)=>{
             return <DetailBenefit key={i} id={i} text={v.text}/>
           })}
-        </div>
+        </motion.div>
       )}
     </motion.div>
   );

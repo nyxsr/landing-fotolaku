@@ -11,7 +11,7 @@ function Adsform() {
 
   useEffect(() => {
     const countdownInterval = setInterval(() => {
-      const targetDate = new Date("January 5, 2023 00:00:00").getTime();
+      const targetDate = new Date("January 7, 2023 00:00:00").getTime();
       const currentDate = new Date().getTime();
       const gap = targetDate - currentDate;
 

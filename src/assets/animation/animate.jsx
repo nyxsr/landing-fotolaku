@@ -141,7 +141,7 @@ export const CardModelAnimate = {
     width:'0%',
     opacity: 0,
     transition:{
-      delay:1.5,
+      delay:2.5,
       duration:.5
     }
   },

@@ -42,8 +42,38 @@ import ModelWardah from "./image/A7203263.webp";
 import ModelNathan from "./image/A7207756.webp";
 import Benefit2 from "./image/benefit2.webp";
 import Benefit3 from "./image/benefit3.webp";
-import ClientTemporaryVideo from "./videos/ClientTemporary.webm";
-import BTSTemporary from "./videos/BTSTemporary.mp4";
+
+import BTSTemporary from "./videos/bts.webm";
+
+import Video3D1 from "./videos/Video3D1.webm"
+import Video3D2 from "./videos/Video3D2.webm"
+
+import VideoCat1 from './videos/VideoCat1.webm'
+import VideoCat2 from './videos/VideoCat2.webm'
+import VideoCat3 from './videos/VideoCat3.webm'
+import VideoCat4 from './videos/VideoCat4.webm'
+
+import VideoCre1 from './videos/VideoCre1.webm'
+import VideoCre2 from './videos/VideoCre2.webm'
+import VideoCre3 from './videos/VideoCre3.webm'
+import VideoCre4 from './videos/VideoCre4.webm'
+import VideoCre5 from './videos/VideoCre5.webm'
+
+import PortoCat1 from './videos/PortoCat1.gif'
+import PortoCat2 from './videos/PortoCat2.gif'
+import PortoCat3 from './videos/PortoCat3.gif'
+import PortoCat4 from './videos/PortoCat4.gif'
+
+import Porto3D1 from './videos/Porto3D1.gif'
+import Porto3D2 from './videos/Porto3D2.gif'
+import Porto3D3 from './videos/Porto3D3.gif'
+import Porto3D4 from './videos/Porto3D4.gif'
+
+import PortoCre1 from './videos/PortoCre1.gif'
+import PortoCre2 from './videos/PortoCre2.gif'
+import PortoCre3 from './videos/PortoCre3.gif'
+import PortoCre4 from './videos/PortoCre4.gif'
+import PortoCre5 from './videos/PortoCre5.gif'
 
 import PlainServicePhoto from "./image/A7202354.webp";
 import LookbookServicePhoto from "./image/A7209602.webp";
@@ -159,8 +189,34 @@ import PlaceWhite from './placeholder/ProdInWhite.webp'
 import PlaceThree from './placeholder/Prodthreed.webp'
 import PlaceVideo from './placeholder/VideoCatalogue.webp'
 import PlaceVidCreative from './placeholder/VideoCreative.webp'
+import ThumbnailBTS from './placeholder/ThumbnailBTS.webp'
 
 export {
+  PortoCre1,
+  PortoCre2,
+  PortoCre3,
+  PortoCre4,
+  PortoCre5,
+  PortoCat1,
+  PortoCat2,
+  PortoCat3,
+  PortoCat4,
+  VideoCat1,
+  VideoCat2,
+  VideoCat3,
+  VideoCat4,
+  VideoCre1,
+  VideoCre2,
+  VideoCre3,
+  VideoCre4,
+  VideoCre5,
+  Porto3D1,
+  Porto3D2,
+  Porto3D3,
+  Porto3D4,
+  Video3D1,
+  Video3D2,
+  ThumbnailBTS,
   DI1,
   DI2,
   DI3,
@@ -210,7 +266,6 @@ export {
   Logo9,
   Logo10,
   BTSTemporary,
-  ClientTemporaryVideo,
   Benefit2,
   Benefit3,
   Wardah1,
