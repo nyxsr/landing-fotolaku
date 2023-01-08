@@ -36,7 +36,7 @@ function Landing() {
   return (
     <>
       <FABwa/>
-      <Adsform/>
+      {/* <Adsform/> */}
       <Navbar/>
       <Hero/>
       <ElevatePitch/>

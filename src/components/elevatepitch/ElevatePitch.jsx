@@ -36,10 +36,7 @@ function ElevatePitch() {
           </p>
         </div>
       </section>
-      <h2 className="text-center mt-8 mb-5 text-xl w-[80%] mx-auto">
-        Brand hebat dimulai dari visual berkualitas
-      </h2>
-      <div className="overflow-x-scroll">
+      <div className="overflow-x-scroll py-2">
         <div className="flex flex-nowrap px-6 py-6 -mt-5 w-fit">
           {DataImageElevate.map((v,i)=>{
             return <Card key={i} id={i} image={v}/>

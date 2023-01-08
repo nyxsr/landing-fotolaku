@@ -9,7 +9,7 @@ function Card(props) {
         width={198}
         height={244}
         src={props.image}
-        className={`w-full h-full object-cover ${props.id === 0 ? 'rounded-l-2xl' : props.id === DataImageElevate.length - 1 ? 'rounded-r-2xl' : ''} z-0`}
+        className={`w-full h-full ${props.id === 10 ? 'object-top' : ''} object-cover ${props.id === 0 ? 'rounded-l-2xl' : props.id === DataImageElevate.length - 1 ? 'rounded-r-2xl' : ''} z-0`}
         alt="1"
       />
     </div>

@@ -6,13 +6,13 @@ import { BsWhatsapp} from 'react-icons/bs'
 function Hero() {
   return (
     <>
-    <section className="px-[1.32rem]">
+    <section className="px-[1.32rem] pt-4 pb-8 bg-[#eceaea]">
       <h1 className="text-[22px] font-semibold">
         <motion.span initial={{ opacity:0 }} animate={{ opacity:1, transition:{ delay:.5, duration:.5} }}>
         Urus foto produk<motion.span className="text-[#fd8703] font-bold w-fit"> dari rumah</motion.span>
         </motion.span>
         <motion.div initial={{ opacity:0 }} animate={{ opacity:1, transition:{ delay:1, duration:.5} }}>
-        Fotolaku tahu apa yang <div>brand kamu <motion.span className="text-[#fd8703] font-bold">butuhkan.</motion.span></div>
+        Fotolaku tahu apa yang <div>brand kamu butuhkan.</div>
         </motion.div>
       </h1>
       <div className="pt-4 flex flex-col gap-2">
@@ -34,7 +34,7 @@ function Hero() {
         </div>
       </div> */}
     </section>
-    <div className="mt-8 h-[16rem] w-screen">
+    <div className="h-[16rem] w-screen">
     <img src={ImageHero} className='w-full h-full object-cover' loading="lazy" alt="" />
     </div>
     </>
