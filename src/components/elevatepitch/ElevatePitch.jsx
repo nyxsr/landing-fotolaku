@@ -43,13 +43,13 @@ function ElevatePitch() {
           })}
         </div>
       </div>
-      <p className="text-center px-5">
+      <p className="text-center px-5 text-xl">
         Dan kabar gembiranya untuk memiliki visual berkualitas <span className="bg-[#b2beb5]">tidak perlu
         budget yang tinggi.</span></p> 
         
-        <p className="text-center px-5 mt-3">Karena bersama fotolaku, kamu dapat memiliki
+        <p className="text-center px-5 mt-3 text-xl">Karena bersama fotolaku, kamu dapat memiliki
         photoshoot yang</p>
-        <p className="text-center font-semibold text-[#fd8703] px-5 mt-3">mudah, terjangkau dan hasil foto profesional.</p>
+        <p className="text-center font-semibold text-xl text-[#fd8703] px-5 mt-3">mudah, terjangkau dan hasil foto profesional.</p>
     </section>
   );
 }

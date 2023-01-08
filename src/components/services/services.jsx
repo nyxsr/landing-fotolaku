@@ -3,7 +3,6 @@ import { AiFillStar } from 'react-icons/ai'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import { useNavigate } from 'react-router-dom'
 import { DataService } from '../../data/data'
-import {BsArrowDownRight} from 'react-icons/bs'
 
 function Services() {
     const videoService = DataService.filter(v => v.category === 'Video')
@@ -46,7 +45,7 @@ function Card(props) {
           src={props.foto}
           placeholderSrc={props.placeholder}
           effect="blur"
-          className="w-[13.25rem] h-[12.4375rem] object-cover rounded-2xl"
+          className={`w-[13.25rem] h-[12.4375rem] ${props.id === 7 && 'object-[20%_20%]'} ${props.id === 1 && 'object-top'} object-cover rounded-2xl`}
           alt={props.text}
           />
           </div>

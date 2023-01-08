@@ -99,6 +99,9 @@ import Item12 from './image/Item12.webp'
 import Item13 from './image/Item13.webp'
 import Item14 from './image/Item14.webp'
 import Item15 from './image/Item15.webp'
+import Item16 from './image/Item16.webp'
+import Item17 from './image/Item17.webp'
+import Item18 from './image/Item18.webp'
 
 import Jose1 from "./models/Jose1.webp";
 import Jose2 from "./models/Jose2.webp";
@@ -192,6 +195,9 @@ import PlaceVidCreative from './placeholder/VideoCreative.webp'
 import ThumbnailBTS from './placeholder/ThumbnailBTS.webp'
 
 export {
+  Item16,
+  Item17,
+  Item18,
   PortoCre1,
   PortoCre2,
   PortoCre3,

@@ -3,7 +3,7 @@ import { AiFillCheckCircle, AiFillStar, AiOutlineStar } from "react-icons/ai";
 import { useNavigate, useParams } from "react-router-dom";
 import { DataService } from "../../data/data";
 import { FaArrowLeft } from "react-icons/fa";
-import { BsPlayFill } from "react-icons/bs";
+import { BsPlayFill, BsWhatsapp } from "react-icons/bs";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import lozad from "lozad";
@@ -28,6 +28,12 @@ function Details() {
     }
   };
 
+  const handleLink = () =>{
+    window.location.href = `https://wa.me/6281394683395?text=${encodeURIComponent(
+      `Hi Fotolaku! Saya ingin menanyakan lebih lanjut tentang ${DataService[id].text}.`
+    )}`
+  }
+
   useEffect(() => {
     const element = document.getElementById("first");
     element.scrollIntoView();
@@ -37,16 +43,20 @@ function Details() {
 
   return (
     <section id="first" className="relative">
+      <div className="flex gap-2 fixed bottom-0 py-5 font-bold text-xl text-white bg-green-500 z-50 justify-center w-screen">
+      <BsWhatsapp size={30}/>
+      <button onClick={handleLink}>Tanya Lebih Lanjut</button>
+      </div>
       <div className="fixed top-0">
         <Splide className={DataService[id].category === 'Video' ? 'h-[80vh]' : 'h-[55vh]'}>
-          {DataService[id].portoFoto.map((v, i) => {
+          {DataService[id].portoFoto.slice(0,7).map((v, i) => {
             const text = v.split(".");
             return (
               <SplideSlide key={i}>
                 {text[1] === "webp" && (
                   <img
                     src={v}
-                    className="w-full h-[55vh] object-cover"
+                    className="w-full h-[55vh] object-top object-cover"
                     alt={`image ${i}`}
                   />
                 )}
@@ -80,15 +90,18 @@ function Details() {
       >
         <FaArrowLeft />
       </div>
-      <div className="bg-[#1c1c1c] h-fit py-2 relative z-10">
+      <div className="bg-[#1c1c1c] h-fit py-2 pb-20 relative z-10">
         <hr className="w-1/4 border-t-[5px] rounded-2xl mx-auto" />
         <p className="pt-6 pb-2 font-bold text-2xl px-6 text-white">
           {DataService[id].text}
         </p>
         <div className="flex justify-between px-6">
+          <div>
           <p className="text-[#fd8703] font-semibold">
             {DataService[id].price}
           </p>
+          <p className="text-green-500">{DataService[id]?.priceDetail}</p>
+          </div>
           <div className="px-6 flex items-center gap-2">
             <div className="flex relative text-[#FD8703] text-xl">
               {Array.from(Array(5), (e, i) => {
