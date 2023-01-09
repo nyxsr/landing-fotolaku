@@ -94,6 +94,7 @@ function Details() {
                       } object-cover`}
                       onClick={(e) => handlePlay(e)}
                       onEnded={() => setPlay(false)}
+                      muted
                       playsInline
                       controls={true}
                       src={v}
