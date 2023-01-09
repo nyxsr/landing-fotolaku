@@ -36,7 +36,7 @@ function Details() {
     window.location.href = `https://wa.me/6281394683395?text=${encodeURIComponent(
       `Hi Fotolaku! Saya ingin menanyakan lebih lanjut tentang ${DataService[id].text}.`
     )}`;
-  };       
+  };
 
   useEffect(() => {
     const element = document.getElementById("first");
@@ -73,16 +73,20 @@ function Details() {
                 )}
                 {text[1] === "webm" && (
                   <div className="relative">
-                    {isPlay === false && (
-                      <div
-                        className={`absolute w-full ${
-                          DataService[id].category === "Video"
-                            ? "h-[80vh]"
-                            : "h-[65vh]"
-                        } flex justify-center items-center text-9xl drop-shadow-lg text-white`}
-                      >
-                        <BsPlayFill />
-                      </div>
+                    {window?.navigator?.platform !== "iPhone" && (
+                      <>
+                        {isPlay === false && (
+                          <div
+                            className={`absolute w-full ${
+                              DataService[id].category === "Video"
+                                ? "h-[80vh]"
+                                : "h-[65vh]"
+                            } flex justify-center items-center text-9xl drop-shadow-lg text-white`}
+                          >
+                            <BsPlayFill />
+                          </div>
+                        )}
+                      </>
                     )}
                     <video
                       width="401"
@@ -94,13 +98,19 @@ function Details() {
                       } object-cover`}
                       onClick={(e) => handlePlay(e)}
                       onEnded={() => setPlay(false)}
-                      muted
+                      autoPlay={window?.navigator?.platform !== "iPhone" ? false : true}
+                      // muted={window?.navigator?.platform !== "iPhone" ? false : true}
+                      // loop={window?.navigator?.platform !== "iPhone" ? false : true}
                       playsInline
-                      controls={true}
-                      src={v}
+                      controls={
+                        window?.navigator?.platform !== "iPhone" ? false : true
+                      }
                     >
                       <source data-src={v} type="video/webm" />
-                      <source data-src={DataService[id].AlterVideo[i]} type="video/mp4" />
+                      <source
+                        data-src={DataService[id].AlterVideo[i]}
+                        type="video/mp4"
+                      />
                     </video>
                   </div>
                 )}
