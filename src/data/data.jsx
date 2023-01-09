@@ -110,13 +110,19 @@ import {
   PortoCre4,
   PortoCre5,
   Video3D1,
+  Video3D1_2,
   Video3D2,
+  Video3D2_2,
   VideoCat1,
+  VideoCat1_2,
   VideoCat2,
+  VideoCat2_2,
   VideoCat3,
   VideoCat4,
   VideoCre1,
+  VideoCre1_2,
   VideoCre2,
+  VideoCre2_2,
   VideoCre3,
   VideoCre4,
   VideoCre5,
@@ -754,6 +760,7 @@ export const DataService = [
     terms: ["lorem", "ipsum", "dolor"],
     portoFoto: [Video3D1,Video3D2],
     portoVideo:[Porto3D1,Porto3D2,Porto3D3,Porto3D4],
+    AlterVideo:[Video3D1_2,Video3D2_2],
   },
   {
     foto: PortoCat4,
@@ -765,7 +772,9 @@ export const DataService = [
     desc: "Video bersama model untuk menunjukan detail produk secara singkat dan simpel dilihat customer",
     terms: ["lorem", "ipsum", "dolor"],
     portoFoto: [VideoCat1,VideoCat2,VideoCat3,VideoCat4],
-    portoVideo:[PortoCat1,PortoCat2,PortoCat3,PortoCat4]
+    portoVideo:[PortoCat1,PortoCat2,PortoCat3,PortoCat4],
+    AlterVideo:[VideoCat1_2,VideoCat2_2],
+
   },
   {
     foto: PortoCre5,
@@ -777,6 +786,7 @@ export const DataService = [
     desc: "Video dengan konsep kreatif yang cocok untuk social media & iklan. Harga bergantung kompleksitas dan kesulitan pengerjaan.",
     terms: ["lorem", "ipsum", "dolor"],
     portoFoto: [VideoCre1,VideoCre2,VideoCre3,VideoCre4,VideoCre5],
-    portoVideo: [PortoCre1,PortoCre2,PortoCre3,PortoCre4,PortoCre5]
+    portoVideo: [PortoCre1,PortoCre2,PortoCre3,PortoCre4,PortoCre5],
+    AlterVideo:[VideoCre1_2,VideoCre2_2],
   },
 ];

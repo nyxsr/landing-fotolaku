@@ -39,20 +39,35 @@ import ModelNada from "./image/A7209309.webp";
 import ModelNathan from "./image/Nathan.webp";
 
 import BTSTemporary from "./videos/bts.webm";
+import BTSTemporary2 from "./videos/bts.mp4";
 
 import Video3D1 from "./videos/Video3D1.webm"
+import Video3D1_2 from "./videos/Video3D1.webm.mp4"
 import Video3D2 from "./videos/Video3D2.webm"
+import Video3D2_2 from "./videos/Video3D2.webm.mp4"
+
 
 import VideoCat1 from './videos/VideoCat1.webm'
 import VideoCat2 from './videos/VideoCat2.webm'
 import VideoCat3 from './videos/VideoCat3.webm'
 import VideoCat4 from './videos/VideoCat4.webm'
 
+import VideoCat1_2 from './videos/VideoCat1.webm.mp4'
+import VideoCat2_2 from './videos/VideoCat2.webm.mp4'
+import VideoCat3_2 from './videos/VideoCat3.webm.mp4'
+import VideoCat4_2 from './videos/VideoCat4.webm.mp4'
+
 import VideoCre1 from './videos/VideoCre1.webm'
 import VideoCre2 from './videos/VideoCre2.webm'
 import VideoCre3 from './videos/VideoCre3.webm'
 import VideoCre4 from './videos/VideoCre4.webm'
 import VideoCre5 from './videos/VideoCre5.webm'
+
+import VideoCre1_2 from './videos/VideoCre1.webm.mp4'
+import VideoCre2_2 from './videos/VideoCre2.webm.mp4'
+import VideoCre3_2 from './videos/VideoCre3.webm.mp4'
+import VideoCre4_2 from './videos/VideoCre4.webm.mp4'
+import VideoCre5_2 from './videos/VideoCre5.webm.mp4'
 
 import PortoCat1 from './videos/PortoCat1.gif'
 import PortoCat2 from './videos/PortoCat2.gif'
@@ -185,6 +200,7 @@ import PlaceVidCreative from './placeholder/VideoCreative.webp'
 import ThumbnailBTS from './placeholder/ThumbnailBTS.webp'
 
 export {
+  BTSTemporary2,
   PlaceAmanda,
   ModelAmanda,
   Item16,
@@ -208,12 +224,21 @@ export {
   VideoCre3,
   VideoCre4,
   VideoCre5,
+  VideoCat1_2,
+  VideoCat2_2,
+  VideoCat3_2,
+  VideoCat4_2,
+  VideoCre1_2,
+  VideoCre2_2,
+  VideoCre3_2,
+  VideoCre4_2,
+  VideoCre5_2,
   Porto3D1,
   Porto3D2,
   Porto3D3,
   Porto3D4,
-  Video3D1,
-  Video3D2,
+  Video3D1_2,
+  Video3D2_2,
   ThumbnailBTS,
   DI1,
   DI2,

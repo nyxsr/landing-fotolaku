@@ -1,7 +1,7 @@
 import lozad from "lozad";
 import React, { useEffect } from "react";
 import { BsWhatsapp } from "react-icons/bs";
-import { BTSTemporary, ThumbnailBTS } from "../../assets/manage";
+import { BTSTemporary, BTSTemporary2, ThumbnailBTS } from "../../assets/manage";
 import { motion } from "framer-motion";
 
 function Behind() {
@@ -35,12 +35,14 @@ function Behind() {
             muted
             loop
             playsInline
+            controls={true}
             data-poster={ThumbnailBTS}
             width="400"
             height="254"
             className="lozad w-full object-cover"
           >
             <source data-src={BTSTemporary} type="video/webm" />
+            <source data-src={BTSTemporary2} type="video/mp4" />
           </video>
         </div>
       </section>
