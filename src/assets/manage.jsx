@@ -237,6 +237,8 @@ export {
   Porto3D2,
   Porto3D3,
   Porto3D4,
+  Video3D1,
+  Video3D2,
   Video3D1_2,
   Video3D2_2,
   ThumbnailBTS,
