@@ -85,7 +85,7 @@ function Details() {
                       </div>
                     )}
                     <video
-                      width="400"
+                      width="401"
                       height="254"
                       className={`video lozad w-full ${
                         DataService[id].category === "Video"
