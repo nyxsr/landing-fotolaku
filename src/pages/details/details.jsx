@@ -7,12 +7,16 @@ import { BsPlayFill, BsWhatsapp } from "react-icons/bs";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import lozad from "lozad";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 function Details() {
   const { id } = useParams();
   const termsandCond = DataService[id].terms;
   const navigate = useNavigate();
   const [isPlay, setPlay] = useState(false);
+  const { scrollYProgress } = useScroll();
+
+  const y = useTransform(scrollYProgress, [0, 0.2, 0.3, 1], [-100, -100, 0, 0]);
 
   const handlePlay = (e) => {
     if (isPlay === false) {
@@ -28,11 +32,11 @@ function Details() {
     }
   };
 
-  const handleLink = () =>{
+  const handleLink = () => {
     window.location.href = `https://wa.me/6281394683395?text=${encodeURIComponent(
       `Hi Fotolaku! Saya ingin menanyakan lebih lanjut tentang ${DataService[id].text}.`
-    )}`
-  }
+    )}`;
+  };
 
   useEffect(() => {
     const element = document.getElementById("first");
@@ -43,13 +47,20 @@ function Details() {
 
   return (
     <section id="first" className="relative">
-      <div className="flex gap-2 fixed bottom-0 py-5 font-bold text-xl text-white bg-green-500 z-50 justify-center w-screen">
-      <BsWhatsapp size={30}/>
-      <button onClick={handleLink}>Tanya Lebih Lanjut</button>
-      </div>
+      <motion.div
+        style={{ bottom: y }}
+        className="flex gap-2 fixed py-5 font-bold text-xl text-white bg-green-500 z-50 justify-center w-screen"
+      >
+        <BsWhatsapp size={30} />
+        <button onClick={handleLink}>Tanya Lebih Lanjut</button>
+      </motion.div>
       <div className="fixed top-0">
-        <Splide className={DataService[id].category === 'Video' ? 'h-[80vh]' : 'h-[55vh]'}>
-          {DataService[id].portoFoto.slice(0,7).map((v, i) => {
+        <Splide
+          className={
+            DataService[id].category === "Video" ? "h-[80vh]" : "h-[55vh]"
+          }
+        >
+          {DataService[id].portoFoto.slice(0, 5).map((v, i) => {
             const text = v.split(".");
             return (
               <SplideSlide key={i}>
@@ -63,16 +74,27 @@ function Details() {
                 {text[1] === "webm" && (
                   <div className="relative">
                     {isPlay === false && (
-                      <div className={`absolute w-full ${DataService[id].category === 'Video' ? 'h-[80vh]' : 'h-[55vh]'} flex justify-center items-center text-9xl drop-shadow-lg text-white`}>
+                      <div
+                        className={`absolute w-full ${
+                          DataService[id].category === "Video"
+                            ? "h-[80vh]"
+                            : "h-[55vh]"
+                        } flex justify-center items-center text-9xl drop-shadow-lg text-white`}
+                      >
                         <BsPlayFill />
                       </div>
                     )}
                     <video
                       width="400"
                       height="254"
-                      className={`video lozad w-full ${DataService[id].category === 'Video' ? 'h-[80vh]' : 'h-[55vh]'} object-cover`}
+                      className={`video lozad w-full ${
+                        DataService[id].category === "Video"
+                          ? "h-[80vh]"
+                          : "h-[55vh]"
+                      } object-cover`}
                       onClick={(e) => handlePlay(e)}
-                      onEnded={()=>setPlay(false)}
+                      onEnded={() => setPlay(false)}
+                      playsInline
                     >
                       <source data-src={v} type="video/webm" />
                     </video>
@@ -83,7 +105,11 @@ function Details() {
           })}
         </Splide>
       </div>
-      <div className={`${DataService[id].category === 'Video' ? 'h-[80vh]' : ' h-[55vh]'} w-screen`} />
+      <div
+        className={`${
+          DataService[id].category === "Video" ? "h-[80vh]" : " h-[55vh]"
+        } w-screen`}
+      />
       <div
         className="absolute top-4 left-4 bg-[#D7D7D7] text-2xl py-1 px-1 rounded-full"
         onClick={() => navigate("/landing#services")}
@@ -97,10 +123,10 @@ function Details() {
         </p>
         <div className="flex justify-between px-6">
           <div>
-          <p className="text-[#fd8703] font-semibold">
-            {DataService[id].price}
-          </p>
-          <p className="text-green-500">{DataService[id]?.priceDetail}</p>
+            <p className="text-[#fd8703] font-semibold">
+              {DataService[id].price}
+            </p>
+            <p className="text-green-500">{DataService[id]?.priceDetail}</p>
           </div>
           <div className="px-6 flex items-center gap-2">
             <div className="flex relative text-[#FD8703] text-xl">
@@ -121,26 +147,26 @@ function Details() {
 
         <p className="text-[#FD8703] font-semibold text-xl pt-11 px-6">About</p>
         <p className="pl-6 text-white">{DataService[id].desc}</p>
-        <div className="pt-10 pl-6">
-          <p className="text-[#9d9d9d] pb-2">Terms & Condition</p>
-          {termsandCond.map((v, i) => {
-            return <Terms key={i} text={v} />;
-          })}
-        </div>
+        {DataService[id].category !== "Video" && (
+          <div className="pt-10 pl-6">
+            <p className="text-[#9d9d9d] pb-2">Terms & Condition</p>
+            {termsandCond.map((v, i) => {
+              return <Terms key={i} text={v} />;
+            })}
+          </div>
+        )}
         <h2 className="px-6 py-6 text-[#FD8703] font-semibold text-xl">
           Portofolio
         </h2>
         <section className="columns-2 gap-6 px-6">
-          {DataService[id].category === 'Video' && (
+          {DataService[id].category === "Video" &&
             DataService[id].portoVideo.map((v, i) => {
               return <GridSection image={v} />;
-            })
-          )}
-          {DataService[id].category === 'Photo' && (
-             DataService[id].portoFoto.map((v, i) => {
+            })}
+          {DataService[id].category === "Photo" &&
+            DataService[id].portoFoto.map((v, i) => {
               return <GridSection image={v} />;
-            })
-          )}
+            })}
         </section>
       </div>
     </section>

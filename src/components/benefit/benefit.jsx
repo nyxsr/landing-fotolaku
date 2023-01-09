@@ -49,7 +49,7 @@ function Card(props) {
   return (
     <div
       className="w-[12.375rem] h-[15.25rem] relative"
-      onClick={()=>navigate(`/model/${props.id}`)}
+      onClick={()=>props.id !== 8 ? navigate(`/model/${props.id}`) : alert('Coming soon for Amanda!')}
     >
       {props.id === 0 && (
         <motion.div variants={CardModelAnimate} initial='hidden' animate={cardmodelcontrols} whileInView='startHidden' className="bg-[#fd8703]/80 absolute z-10 right-0 flex rounded-r-2xl justify-center items-center h-full w-1/2">

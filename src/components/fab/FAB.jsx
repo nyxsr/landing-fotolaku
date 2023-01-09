@@ -33,7 +33,7 @@ function FAB() {
       className="fixed flex gap-0 items-center bottom-5 right-5 z-50"
     >
       <div className="bg-white pr-8 shadow-lg -mr-5 text-[15px] py-2 px-5 rounded-full">
-        <p>Chat with us!</p>
+        <p>Konsultasi Sekarang!</p>
       </div>
       <div className="bg-[#49C858] shadow-xl text-white text-3xl py-4 px-4 rounded-full">
         <BsWhatsapp/>

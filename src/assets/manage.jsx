@@ -20,7 +20,6 @@ import DI2 from './image/Di2.webp'
 import DI3 from './image/Di3.webp'
 import DI4 from './image/Di4.webp'
 import DI5 from './image/Di5.webp'
-import VideoCreative from './image/VideoCreative.webp'
 import ImageHero from "./image/bg-hero.webp";
 import ProcessConsult from "./image/ProcessConsult.webp";
 import ProcessDelivery from "./image/ProcessDelivery.webp";
@@ -29,19 +28,15 @@ import ProcessIron from "./image/ProcessIron.webp";
 import ProcessPhoto from "./image/ProcessPhoto.webp";
 import ProcessReturn from "./image/ProcessReturn.webp";
 import ModelDio from "./image/A7203561.webp";
-import ModelJose from "./image/A7202358.webp";
-import ModelJessica from "./image/A7202762.webp";
-import ModelEdward from "./image/A7208661.webp";
-import ModelConny from "./image/A7208962.webp";
-import ModelJennifer from "./image/A7201063.webp";
-import ModelJordan from "./image/A7208475.webp";
-import ModelKevin from "./image/A7205024.webp";
+import ModelAmanda from './image/Amanda.webp'
+import ModelJose from "./image/Jose.webp";
+import ModelJessica from "./image/Jessica.webp";
+import ModelEdward from "./image/Edward.webp";
+import ModelConny from "./image/Conny.webp";
+import ModelJennifer from "./image/Jennifer.webp";
+import ModelKevin from "./image/Kevin.webp";
 import ModelNada from "./image/A7209309.webp";
-import ModelSteven from "./image/A7201499.webp";
-import ModelWardah from "./image/A7203263.webp";
-import ModelNathan from "./image/A7207756.webp";
-import Benefit2 from "./image/benefit2.webp";
-import Benefit3 from "./image/benefit3.webp";
+import ModelNathan from "./image/Nathan.webp";
 
 import BTSTemporary from "./videos/bts.webm";
 
@@ -76,13 +71,7 @@ import PortoCre4 from './videos/PortoCre4.gif'
 import PortoCre5 from './videos/PortoCre5.gif'
 
 import PlainServicePhoto from "./image/A7202354.webp";
-import LookbookServicePhoto from "./image/A7209602.webp";
-import BeautyServicePhoto from "./image/A7203153.webp";
-import CreativeServicePhoto from './image/A7209175.webp'
-import ProductWhiteServicePhoto from './image/ProdInWhite.webp'
-import DigitalImageServicePhoto from './image/digitalImaging.webp'
-import ProductThreeServicePhoto from './image/Prodthreed.webp'
-import VideoCatServicePhoto from './image/VideoCatalogue.webp'
+// import LookbookServicePhoto from "./image/A7209602.webp";
 
 import Item1 from './image/Item1.webp'
 import Item2 from './image/Item2.webp'
@@ -138,10 +127,10 @@ import Nathan2 from "./models/Nathan2.webp";
 import Nathan3 from "./models/Nathan3.webp";
 import Nathan4 from "./models/Nathan4.webp";
 
-import Jordan1 from "./models/Jordan1.webp";
-import Jordan2 from "./models/Jordan2.webp";
-import Jordan3 from "./models/Jordan3.webp";
-import Jordan4 from "./models/Jordan4.webp";
+// import Jordan1 from "./models/Jordan1.webp";
+// import Jordan2 from "./models/Jordan2.webp";
+// import Jordan3 from "./models/Jordan3.webp";
+// import Jordan4 from "./models/Jordan4.webp";
 
 import Kevin1 from "./models/Kevin1.webp";
 import Kevin2 from "./models/Kevin2.webp";
@@ -153,15 +142,15 @@ import Nada2 from "./models/Nada2.webp";
 import Nada3 from "./models/Nada3.webp";
 import Nada4 from "./models/Nada4.webp";
 
-import Steven1 from "./models/Steven1.webp";
-import Steven2 from "./models/Steven2.webp";
-import Steven3 from "./models/Steven3.webp";
-import Steven4 from "./models/Steven4.webp";
+// import Steven1 from "./models/Steven1.webp";
+// import Steven2 from "./models/Steven2.webp";
+// import Steven3 from "./models/Steven3.webp";
+// import Steven4 from "./models/Steven4.webp";
 
-import Wardah1 from "./models/Wardah1.webp";
-import Wardah2 from "./models/Wardah2.webp";
-import Wardah3 from "./models/Wardah3.webp";
-import Wardah4 from "./models/Wardah4.webp";
+// import Wardah1 from "./models/Wardah1.webp";
+// import Wardah2 from "./models/Wardah2.webp";
+// import Wardah3 from "./models/Wardah3.webp";
+// import Wardah4 from "./models/Wardah4.webp";
 
 //* Placeholder
 import PlaceConsult from "./placeholder/ProcessConsult.webp";
@@ -182,6 +171,7 @@ import PlaceEdward from "./placeholder/A7208661.webp";
 import PlaceConny from "./placeholder/A7208962.webp";
 import PlaceNathan from "./placeholder/PlaceNathan.webp";
 import PlaceNada from "./placeholder/A7209309.webp";
+import PlaceAmanda from './placeholder/PlaceAmanda.webp'
 
 import PlacePlain from "./placeholder/A7202354.webp";
 import PlaceBeauty from "./placeholder/A7203153.webp";
@@ -195,6 +185,8 @@ import PlaceVidCreative from './placeholder/VideoCreative.webp'
 import ThumbnailBTS from './placeholder/ThumbnailBTS.webp'
 
 export {
+  PlaceAmanda,
+  ModelAmanda,
   Item16,
   Item17,
   Item18,
@@ -240,14 +232,6 @@ export {
   PlaceVideo,
   PlaceWhite,
   PlainServicePhoto,
-  LookbookServicePhoto,
-  BeautyServicePhoto,
-  CreativeServicePhoto,
-  VideoCatServicePhoto,
-  DigitalImageServicePhoto,
-  ProductThreeServicePhoto,
-  ProductWhiteServicePhoto,
-  VideoCreative,
   Item1,
   Item2,
   Item3,
@@ -272,16 +256,6 @@ export {
   Logo9,
   Logo10,
   BTSTemporary,
-  Benefit2,
-  Benefit3,
-  Wardah1,
-  Wardah2,
-  Wardah3,
-  Wardah4,
-  Steven1,
-  Steven2,
-  Steven3,
-  Steven4,
   Nada1,
   Nada2,
   Nada3,
@@ -290,10 +264,6 @@ export {
   Kevin2,
   Kevin3,
   Kevin4,
-  Jordan1,
-  Jordan2,
-  Jordan3,
-  Jordan4,
   Nathan1,
   Nathan2,
   Nathan3,
@@ -339,13 +309,10 @@ export {
   ModelEdward,
   ModelJennifer,
   ModelJessica,
-  ModelJordan,
   ModelJose,
   ModelKevin,
   ModelNada,
   ModelNathan,
-  ModelSteven,
-  ModelWardah,
   Logo,
   ImageHero,
   FABwa,
