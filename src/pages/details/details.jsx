@@ -99,6 +99,7 @@ function Details() {
                       src={v}
                     >
                       <source data-src={v} type="video/webm" />
+                      <source data-src={DataService[id].AlterVideo[i]} type="video/mp4" />
                     </video>
                   </div>
                 )}
