@@ -239,15 +239,15 @@ export const DataModel = [
     text: "Dio",
     bigPhoto: [Dio1, Dio2, Dio3, Dio4],
     bio: {
-      tinggi: 175,
-      umur: 22,
+      tinggi: 185,
+      umur: 30,
       ukuran: {
-        sepatu: 40,
-        baju: "L",
+        sepatu: 45,
+        baju: "L-XL",
       },
       lebar: {
-        pinggang: 32,
-        dada: 32,
+        pinggang: 42,
+        dada: 44,
       },
     },
   },
