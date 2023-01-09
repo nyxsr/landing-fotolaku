@@ -39,7 +39,6 @@ function Behind() {
             width="400"
             height="254"
             className="lozad w-full object-cover"
-            src={BTSTemporary}
           >
             <source data-src={BTSTemporary} type="video/webm" />
           </video>
