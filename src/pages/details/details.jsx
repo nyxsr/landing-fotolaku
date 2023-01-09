@@ -95,6 +95,7 @@ function Details() {
                       onClick={(e) => handlePlay(e)}
                       onEnded={() => setPlay(false)}
                       playsInline
+                      src={v}
                     >
                       <source data-src={v} type="video/webm" />
                     </video>
