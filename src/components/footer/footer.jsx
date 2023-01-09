@@ -24,7 +24,7 @@ function Footer() {
           onClick={() => handleLink("https://wa.me/+6281394683395")}
           className="underline underline-offset-2 text-[#9d9d9d]"
         >
-          081 3946 8339 (Whatsapp)
+          FotoLaku Creative Consultant (Whatsapp)
         </p>
         <p
           onClick={() => window.open("tel:02122225678")}

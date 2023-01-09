@@ -17,9 +17,7 @@ function Hero() {
       </h1>
       <div className="pt-4 flex flex-col gap-2">
         <button onClick={() =>
-        (window.location.href = `https://wa.me/6281394683395?text=${encodeURIComponent(
-          "Halo semuanya!"
-        )}`)
+        (window.location.href = `https://split.to/igbio`)
       } className="bg-green-500 shadow-lg w-fit py-3 px-4 text-lg rounded-xl text-white font-semibold flex items-center gap-3">
         <BsWhatsapp/>
         <p className="text-[14px]">Hubungi Konsultan kami</p></button>

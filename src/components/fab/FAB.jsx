@@ -7,11 +7,7 @@ import { BsWhatsapp} from 'react-icons/bs'
 function FAB() {
   return (
     <motion.div
-      onClick={() =>
-        (window.location.href = `https://wa.me/6281394683395?text=${encodeURIComponent(
-          "Halo semuanya!"
-        )}`)
-      }
+      onClick={() =>window.location.href = "https://split.to/igbio"}
       animate={{
         y: [0, -10, 0],
         transition: {
