@@ -29,6 +29,7 @@ import Beauty28 from './Beauty Shoot/28.webp'
 import Beauty29 from './Beauty Shoot/29.webp'
 import Beauty30 from './Beauty Shoot/30.webp'
 import Beauty31 from './Beauty Shoot/31.webp'
+import Beauty32 from './Beauty Shoot/32.webp'
 
 import Creative1 from './Creative Shoot/1.webp'
 import Creative2 from './Creative Shoot/2.webp'
@@ -83,6 +84,17 @@ import Lookbook13 from './Lookbook/13.webp'
 import Lookbook14 from './Lookbook/14.webp'
 import Lookbook15 from './Lookbook/15.webp'
 import Lookbook16 from './Lookbook/16.webp'
+import Lookbook17 from './Lookbook/17.webp'
+import Lookbook18 from './Lookbook/18.webp'
+import Lookbook19 from './Lookbook/19.webp'
+import Lookbook20 from './Lookbook/20.webp'
+import Lookbook21 from './Lookbook/21.webp'
+import Lookbook22 from './Lookbook/22.webp'
+import Lookbook23 from './Lookbook/23.webp'
+import Lookbook24 from './Lookbook/24.webp'
+import Lookbook25 from './Lookbook/25.webp'
+import Lookbook26 from './Lookbook/26.webp'
+import Lookbook27 from './Lookbook/27.webp'
 
 import Plain1 from './Plain Catalogue/1.webp'
 import Plain2 from './Plain Catalogue/2.webp'
@@ -118,6 +130,18 @@ import Pow15 from './Product On white/15.webp'
 import Pow16 from './Product On white/16.webp'
 
 export {
+    Lookbook17,
+    Lookbook18,
+    Lookbook19,
+    Lookbook20,
+    Lookbook21,
+    Lookbook22,
+    Lookbook23,
+    Lookbook24,
+    Lookbook25,
+    Lookbook26,
+    Lookbook27,
+    Beauty32,
     Creative10,
     Creative11,
     Creative12,

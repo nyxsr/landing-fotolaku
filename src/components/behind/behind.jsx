@@ -12,17 +12,16 @@ function Behind() {
   return (
     <>
      <section className="flex flex-col relative py-10 gap-4 px-5 z-10">
-      {/* <h1 className="uppercase font-bold text-2xl">Tertarik menggunakan jasa kami ?</h1>
-      <p className="">Kami pastikan bagaimana kami merubah ide anda menjadi menakjubkan</p>
-      <a href="https://wa.me/081394683395" className="bg-[#FD8703] text-white px-8 py-2 w-fit rounded-lg">Let's Talk</a> */}
+      <p className='text-center font-semibold text-xl'>KALAU YANG LAIN SUDAH UPGRADE TOKO NYA JADI BRAND, KAMU KAPAN?</p>
         <motion.div
         whileTap={{ scale:.8, transition:{type:'spring',bounce:.6} }}
         onClick={()=>window.location.href = 'https://split.to/igbio'}
-        className="flex gap-2 py-5 font-bold text-xl text-white bg-green-500 justify-center w-full"
+        className="flex gap-2 py-5 font-bold shadow-2xl text-xl text-white bg-green-500 justify-center w-full"
       >
         <BsWhatsapp size={30} />
         <button>Konsultasi Sekarang!</button>
       </motion.div>
+      <p className='text-sm text-center text-[#736f6f]'>Harga untuk UMKM! Jangan ragu konsultasi sekarang.</p>
     </section>
     <section className='pt-10'>
       <h1 className='px-6 text-2xl font-semibold'>BEHIND THE SCENES</h1>

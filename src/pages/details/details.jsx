@@ -36,7 +36,7 @@ function Details() {
     window.location.href = `https://wa.me/6281394683395?text=${encodeURIComponent(
       `Hi Fotolaku! Saya ingin menanyakan lebih lanjut tentang ${DataService[id].text}.`
     )}`;
-  };
+  };       
 
   useEffect(() => {
     const element = document.getElementById("first");
@@ -57,17 +57,17 @@ function Details() {
       <div className="fixed top-0">
         <Splide
           className={
-            DataService[id].category === "Video" ? "h-[80vh]" : "h-[55vh]"
+            DataService[id].category === "Video" ? "h-[80vh]" : "h-[65vh]"
           }
         >
-          {DataService[id].portoFoto.slice(0, 5).map((v, i) => {
+          {DataService[id].portoFoto.slice(0, 10).map((v, i) => {
             const text = v.split(".");
             return (
               <SplideSlide key={i}>
                 {text[1] === "webp" && (
                   <img
                     src={v}
-                    className="w-full h-[55vh] object-top object-cover"
+                    className="w-full h-[65vh] object-[20%_20%] object-cover"
                     alt={`image ${i}`}
                   />
                 )}
@@ -78,7 +78,7 @@ function Details() {
                         className={`absolute w-full ${
                           DataService[id].category === "Video"
                             ? "h-[80vh]"
-                            : "h-[55vh]"
+                            : "h-[65vh]"
                         } flex justify-center items-center text-9xl drop-shadow-lg text-white`}
                       >
                         <BsPlayFill />
@@ -107,7 +107,7 @@ function Details() {
       </div>
       <div
         className={`${
-          DataService[id].category === "Video" ? "h-[80vh]" : " h-[55vh]"
+          DataService[id].category === "Video" ? "h-[80vh]" : " h-[65vh]"
         } w-screen`}
       />
       <div
