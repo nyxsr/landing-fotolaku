@@ -104,6 +104,7 @@ import {
   PortoCat2,
   PortoCat3,
   PortoCat4,
+  PortoCat5,
   PortoCre1,
   PortoCre2,
   PortoCre3,
@@ -118,14 +119,21 @@ import {
   VideoCat2,
   VideoCat2_2,
   VideoCat3,
+  VideoCat3_2,
   VideoCat4,
+  VideoCat4_2,
+  VideoCat5,
+  VideoCat5_2,
   VideoCre1,
   VideoCre1_2,
   VideoCre2,
   VideoCre2_2,
   VideoCre3,
+  VideoCre3_2,
   VideoCre4,
+  VideoCre4_2,
   VideoCre5,
+  VideoCre5_2,
 } from "../assets/manage";
 import {
   Beauty1,
@@ -561,7 +569,7 @@ export const DataService = [
     placeholder: PlacePlain,
     text: "Plain Catalogue",
     rating: 5,
-    price: "Rp.90.000 / pcs",
+    price: "Rp.99.000 / pcs",
     priceDetail: '5 Photo / pcs',
     desc: "Foto bersama model dengan background putih polos",
     terms: [
@@ -763,7 +771,7 @@ export const DataService = [
     AlterVideo:[Video3D1_2,Video3D2_2],
   },
   {
-    foto: PortoCat4,
+    foto: PortoCat5,
     category: "Video",
     placeholder: PlaceVideo,
     text: "Video Katalog",
@@ -771,9 +779,9 @@ export const DataService = [
     price: "Rp.200.000 / video",
     desc: "Video bersama model untuk menunjukan detail produk secara singkat dan simpel dilihat customer",
     terms: ["lorem", "ipsum", "dolor"],
-    portoFoto: [VideoCat1,VideoCat2,VideoCat3,VideoCat4],
-    portoVideo:[PortoCat1,PortoCat2,PortoCat3,PortoCat4],
-    AlterVideo:[VideoCat1_2,VideoCat2_2],
+    portoFoto: [VideoCat5,VideoCat3,VideoCat4,VideoCat2],
+    portoVideo:[PortoCat2,PortoCat3,PortoCat1,PortoCat5],
+    AlterVideo:[VideoCat5_2,VideoCat3_2,VideoCat4_2,VideoCat2_2],
 
   },
   {
@@ -785,8 +793,16 @@ export const DataService = [
     price: "Rp.1,5 - 20 jt / Video",
     desc: "Video dengan konsep kreatif yang cocok untuk social media & iklan. Harga bergantung kompleksitas dan kesulitan pengerjaan.",
     terms: ["lorem", "ipsum", "dolor"],
-    portoFoto: [VideoCre1,VideoCre2,VideoCre3,VideoCre4,VideoCre5],
-    portoVideo: [PortoCre1,PortoCre2,PortoCre3,PortoCre4,PortoCre5],
-    AlterVideo:[VideoCre1_2,VideoCre2_2],
+    portoFoto: [VideoCre1,VideoCre2,VideoCre3,VideoCre4,VideoCre5,VideoCat1],
+    portoVideo: [PortoCre1,PortoCre2,PortoCre3,PortoCre4,PortoCre5,PortoCat4],
+    AlterVideo:[VideoCre1_2,VideoCre2_2,VideoCre3_2,VideoCre4_2,VideoCre5_2,VideoCat1_2],
   },
 ];
+
+export const DataLink = {
+  Whatsapp:'http://split.to/Linksplitlpbaru',
+  WhatsappAlter:'http://split.to/linksplittiktok',
+  Instagram: 'https://www.instagram.com/unmute.visual',
+  Tiktok: 'https://www.tiktok.com/@foto.laku?_t=8YO2h0zNG7u&_r=1',
+  Youtube: 'https://www.youtube.com/@fotolaku1812'
+}

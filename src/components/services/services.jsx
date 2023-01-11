@@ -1,7 +1,7 @@
 import React from 'react'
 import { AiFillStar } from 'react-icons/ai'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
-import { useNavigate } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 import { DataService } from '../../data/data'
 
 function Services() {
@@ -35,8 +35,10 @@ export default Services
 
 function Card(props) {
     const navigate = useNavigate();
+    const location = useLocation();
+  const path = location.pathname.split('/');
     return (
-        <div className="relative bg-white flex flex-col rounded-2xl py-3 px-3" onClick={()=>navigate(`/details/${props.id}`)}>
+        <div className="relative bg-white flex flex-col rounded-2xl py-3 px-3" onClick={()=>navigate(`/${path[1] === 'tiktok' ? 'details_tiktok' : 'details'}/${props.id}`)}>
           <div className='relative'>
 
         <LazyLoadImage

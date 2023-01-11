@@ -14,6 +14,9 @@ import Logo9 from "./icons/9.webp";
 import Logo10 from "./icons/10.webp";
 import MUA from './icons/MUA.webp'
 import Model from './icons/Model.webp'
+import IconLeft from './icons/kiri.png'
+import IconRight from './icons/kanan.png'
+import IconMiddle from './icons/tengah.png'
 
 import DI1 from './image/Di1.webp'
 import DI2 from './image/Di2.webp'
@@ -51,11 +54,13 @@ import VideoCat1 from './videos/VideoCat1.webm'
 import VideoCat2 from './videos/VideoCat2.webm'
 import VideoCat3 from './videos/VideoCat3.webm'
 import VideoCat4 from './videos/VideoCat4.webm'
+import VideoCat5 from './videos/VideoCat5.webm'
 
 import VideoCat1_2 from './videos/VideoCat1.webm.mp4'
 import VideoCat2_2 from './videos/VideoCat2.webm.mp4'
 import VideoCat3_2 from './videos/VideoCat3.webm.mp4'
 import VideoCat4_2 from './videos/VideoCat4.webm.mp4'
+import VideoCat5_2 from './videos/VideoCat5.webm.mp4'
 
 import VideoCre1 from './videos/VideoCre1.webm'
 import VideoCre2 from './videos/VideoCre2.webm'
@@ -73,6 +78,7 @@ import PortoCat1 from './videos/PortoCat1.gif'
 import PortoCat2 from './videos/PortoCat2.gif'
 import PortoCat3 from './videos/PortoCat3.gif'
 import PortoCat4 from './videos/PortoCat4.gif'
+import PortoCat5 from './videos/PortoCat5.gif'
 
 import Porto3D1 from './videos/Porto3D1.gif'
 import Porto3D2 from './videos/Porto3D2.gif'
@@ -200,6 +206,12 @@ import PlaceVidCreative from './placeholder/VideoCreative.webp'
 import ThumbnailBTS from './placeholder/ThumbnailBTS.webp'
 
 export {
+  IconLeft,
+  IconMiddle,
+  IconRight,
+  PortoCat5,
+  VideoCat5,
+  VideoCat5_2,
   BTSTemporary2,
   PlaceAmanda,
   ModelAmanda,

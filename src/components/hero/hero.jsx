@@ -2,8 +2,12 @@ import React from "react";
 import { ImageHero } from "../../assets/manage";
 import { motion } from "framer-motion";
 import { BsWhatsapp} from 'react-icons/bs'
+import { DataLink } from "../../data/data";
+import { useLocation } from "react-router-dom";
 
 function Hero() {
+  const location = useLocation();
+  const path = location.pathname.split('/');
   return (
     <>
     <section className="px-[1.32rem] pt-4 pb-8 bg-[#eceaea]">
@@ -16,9 +20,7 @@ function Hero() {
         </motion.div>
       </h1>
       <div className="pt-4 flex flex-col gap-2">
-        <button onClick={() =>
-        (window.location.href = `https://split.to/igbio`)
-      } className="bg-green-500 shadow-lg w-fit py-3 px-4 text-lg rounded-xl text-white font-semibold flex items-center gap-3">
+        <button onClick={()=>{window.open(path[1] === 'tiktok' ? DataLink.WhatsappAlter : DataLink.Whatsapp,'_blank');fbq('track','Lead')}} className="bg-green-500 shadow-lg w-fit py-3 px-4 text-lg rounded-xl text-white font-semibold flex items-center gap-3">
         <BsWhatsapp/>
         <p className="text-[14px]">Hubungi Konsultan kami</p></button>
         <p className="text-[#747474] px-1 text-sm">dapatkan gratis konsultasi foto produk !</p>

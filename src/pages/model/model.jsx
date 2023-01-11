@@ -9,7 +9,7 @@ import {
   ModelAnimate3,
   ModelAnimate4,
 } from "../../assets/animation/animate";
-import { useNavigate, useParams } from "react-router-dom";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
 import { DataModel } from "../../data/data"; 
 
 function ModelDetails() {
@@ -17,6 +17,8 @@ function ModelDetails() {
   const [startX, setStartX] = useState(0);
   const [endX, setEndX] = useState(0);
   const navigate = useNavigate();
+  const location = useLocation()
+  const path = location.pathname.split('/');
   const [slidePos, setSlidePos] = useState(1);
   const controlsImage1 = useAnimation();
   const controlsImage2 = useAnimation();
@@ -109,8 +111,8 @@ function ModelDetails() {
     <section className="h-screen relative bg-white overflow-y-hidden overflow-x-hidden">
       <div className="ml-5">
         <div
-          className="text-4xl py-2 px-2 z-50"
-          onClick={() => navigate("/landing#benefit")}
+          className="text-5xl py-2 px-2 z-50"
+          onClick={() => navigate(`/${path[1] === 'model_tiktok' ? 'tiktok' : 'landing'}#benefit`)}
         >
           <AiOutlineArrowLeft />
         </div>

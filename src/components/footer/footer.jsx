@@ -1,9 +1,24 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
+import { DataLink } from "../../data/data";
 
 function Footer() {
+  const location = useLocation()
+  const path = location.pathname.split('/');
+
   const handleLink = (link) => {
     window.location.href = link;
   };
+
+  const newTabLeads = (link) =>{
+    window.open(link,'_blank');
+    fbq('track','Lead');
+  }
+
+  const newTabContact = (link) =>{
+    window.open(link,'_blank')
+    fbq('track','Contact')
+  }
   return (
     <footer
       id="footer"
@@ -21,13 +36,13 @@ function Footer() {
       <div className="flex flex-col gap-2">
         <p className="text-white font-bold">Say Hello</p>
         <p
-          onClick={() => handleLink("https://wa.me/+6281394683395")}
+          onClick={() => newTabLeads(path[1] === 'tiktok' ? DataLink.WhatsappAlter : DataLink.Whatsapp)}
           className="underline underline-offset-2 text-[#9d9d9d]"
         >
           0811-8037-895 (Whatsapp)
         </p>
         <p
-          onClick={() => window.open("tel:02122225678")}
+          onClick={() => {window.open("tel:02122225678");fbq('track','Contact')}}
           className="underline underline-offset-2 text-[#9d9d9d]"
         >
           021-2222-5678
@@ -36,21 +51,19 @@ function Footer() {
       <div className="flex flex-col gap-2">
         <p className="text-white font-bold">Social Media</p>
         <p
-          onClick={() => handleLink("https://www.instagram.com/unmute.visual/")}
+          onClick={() => newTabContact(DataLink.Instagram)}
           className="underline underline-offset-2 text-[#9d9d9d]"
         >
           Instagram
         </p>
         <p
-          onClick={() =>
-            handleLink("https://www.tiktok.com/@foto.laku?_t=8YO2h0zNG7u&_r=1")
-          }
+          onClick={() => newTabContact(DataLink.Tiktok)}
           className="underline underline-offset-2 text-[#9d9d9d]"
         >
           Tiktok
         </p>
         <p
-          onClick={() => handleLink("https://www.youtube.com/@fotolaku1812")}
+          onClick={() => newTabContact(DataLink.Youtube)}
           className="underline underline-offset-2 text-[#9d9d9d]"
         >
           YouTube

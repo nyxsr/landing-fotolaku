@@ -3,7 +3,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import { DataBenefit, DataModel } from "../../data/data";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import { Model, MUA } from "../../assets/manage";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { motion, useAnimation } from "framer-motion";
 import { BsFillCameraFill } from "react-icons/bs";
 import { BenefitAnimate, CardModelAnimate, DetailBenefitAnimate } from "../../assets/animation/animate";
@@ -41,6 +41,8 @@ export default Benefit;
 function Card(props) {
   const navigate = useNavigate()
   const cardmodelcontrols = useAnimation();
+  const location = useLocation()
+  const path = location.pathname.split('/');
 
   useEffect(()=>{
     cardmodelcontrols.start('visible')
@@ -49,7 +51,7 @@ function Card(props) {
   return (
     <div
       className="w-[12.375rem] h-[15.25rem] relative"
-      onClick={()=>props.id !== 8 ? navigate(`/model/${props.id}`) : alert('Coming soon for Amanda!')}
+      onClick={()=>props.id !== 8 ? navigate(`/${path[1] === 'tiktok' ? 'model_tiktok' : 'model'}/${props.id}`) : alert('Coming soon for Amanda!')}
     >
       {props.id === 0 && (
         <motion.div variants={CardModelAnimate} initial='hidden' animate={cardmodelcontrols} whileInView='startHidden' className="bg-[#fd8703]/80 absolute z-10 right-0 flex rounded-r-2xl justify-center items-center h-full w-1/2">

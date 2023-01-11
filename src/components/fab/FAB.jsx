@@ -1,13 +1,15 @@
 import React from "react";
-import { FABwa } from "../../assets/manage";
 import { motion } from "framer-motion";
-import { useNavigate } from "react-router-dom";
 import { BsWhatsapp} from 'react-icons/bs'
+import { DataLink } from "../../data/data";
+import { useLocation } from "react-router-dom";
 
 function FAB() {
+  const location = useLocation();
+  const path = location.pathname.split('/');
   return (
     <motion.div
-      onClick={() =>window.location.href = "https://split.to/igbio"}
+      onClick={() =>{window.open(path[1] === 'tiktok' ? DataLink.WhatsappAlter : DataLink.Whatsapp,'_blank');fbq('track','Lead')}}
       animate={{
         y: [0, -10, 0],
         transition: {

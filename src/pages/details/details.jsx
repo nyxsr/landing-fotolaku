@@ -1,7 +1,7 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { AiFillCheckCircle, AiFillStar, AiOutlineStar } from "react-icons/ai";
-import { useNavigate, useParams } from "react-router-dom";
-import { DataService } from "../../data/data";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
+import { DataLink, DataService } from "../../data/data";
 import { FaArrowLeft } from "react-icons/fa";
 import { BsPlayFill, BsWhatsapp } from "react-icons/bs";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
@@ -11,6 +11,8 @@ import { motion, useScroll, useTransform } from "framer-motion";
 
 function Details() {
   const { id } = useParams();
+  const location = useLocation()
+  const path = location.pathname.split('/');
   const termsandCond = DataService[id].terms;
   const navigate = useNavigate();
   const [isPlay, setPlay] = useState(false);
@@ -33,9 +35,15 @@ function Details() {
   };
 
   const handleLink = () => {
-    window.location.href = `https://wa.me/6281394683395?text=${encodeURIComponent(
-      `Hi Fotolaku! Saya ingin menanyakan lebih lanjut tentang ${DataService[id].text}.`
-    )}`;
+    if (path[1] === 'details_tiktok') {
+      window.open(DataLink.WhatsappAlter)
+      fbq('track','Lead')
+    }else{
+      window.open(`https://wa.me/6281323595105?text=${encodeURIComponent(
+        `Hi Fotolaku! Saya ingin menanyakan lebih lanjut tentang ${DataService[id].text}.`
+      )}`,'_blank');
+      fbq('track','Lead')
+    }
   };
 
   useEffect(() => {
@@ -126,7 +134,7 @@ function Details() {
       />
       <div
         className="absolute top-4 left-4 bg-[#D7D7D7] text-2xl py-1 px-1 rounded-full"
-        onClick={() => navigate("/landing#services")}
+        onClick={() => navigate(`/${path[1] === 'details_tiktok' ? 'tiktok' : 'landing'}#services`)}
       >
         <FaArrowLeft />
       </div>

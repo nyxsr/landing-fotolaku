@@ -1,10 +1,14 @@
 import lozad from "lozad";
 import React, { useEffect } from "react";
 import { BsWhatsapp } from "react-icons/bs";
-import { BTSTemporary, BTSTemporary2, ThumbnailBTS } from "../../assets/manage";
+import { BTSTemporary, BTSTemporary2, IconLeft, IconMiddle, IconRight, ThumbnailBTS } from "../../assets/manage";
 import { motion } from "framer-motion";
+import { DataLink } from "../../data/data";
+import { useLocation } from "react-router-dom";
 
 function Behind() {
+  const location = useLocation();
+  const path = location.pathname.split('/');
   useEffect(() => {
     const observer = lozad();
     observer.observe();
@@ -12,12 +16,17 @@ function Behind() {
   return (
     <>
       <section className="flex flex-col relative py-10 gap-4 px-5 z-10">
-        <p className="text-center font-semibold text-xl">
-          KALAU YANG LAIN SUDAH UPGRADE TOKO NYA JADI BRAND, KAMU KAPAN?
+        <p className="text-center text-xl">
+        Banyak toko udah jadi <b>brand keren</b> dengan foto produk berkualitas! <b>kamu kapan</b> ?
         </p>
+        <div className="flex items-center justify-center -my-8">
+          <img src={IconLeft} alt="" />
+          <img src={IconMiddle} alt="" />
+          <img src={IconRight} alt="" />
+        </div>
         <motion.div
           whileTap={{ scale: 0.8, transition: { type: "spring", bounce: 0.6 } }}
-          onClick={() => (window.location.href = "https://split.to/igbio")}
+          onClick={() => {window.open(path[1] === 'tiktok' ? DataLink.WhatsappAlter : DataLink.Whatsapp,'_blank');fbq('track','Lead')}}
           className="flex gap-2 py-5 font-bold shadow-2xl text-xl text-white bg-green-500 justify-center w-full"
         >
           <BsWhatsapp size={30} />
@@ -35,7 +44,6 @@ function Behind() {
             muted
             loop
             playsInline
-            controls={true}
             data-poster={ThumbnailBTS}
             width="400"
             height="254"
