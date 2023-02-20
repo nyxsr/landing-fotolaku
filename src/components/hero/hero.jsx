@@ -20,19 +20,11 @@ function Hero() {
         </motion.div>
       </h1>
       <div className="pt-4 flex flex-col gap-2">
-        <button onClick={()=>{window.open(path[1] === 'tiktok' ? DataLink.WhatsappAlter : DataLink.Whatsapp,'_blank');fbq('track','Lead')}} className="bg-green-500 shadow-lg w-fit py-3 px-4 text-lg rounded-xl text-white font-semibold flex items-center gap-3">
+        <button onClick={()=>{window.open(path[1] === 'tiktok' ? DataLink.WhatsappAlter : DataLink.Whatsapp,'_blank')}} className="bg-green-500 shadow-lg w-fit py-3 px-4 text-lg rounded-xl text-white font-semibold flex items-center gap-3">
         <BsWhatsapp/>
         <p className="text-[14px]">Hubungi Konsultan kami</p></button>
         <p className="text-[#747474] px-1 text-sm">dapatkan gratis konsultasi foto produk !</p>
       </div>
-      {/* <div className="flex gap-[0.875rem] pt-4">
-        <div className="bg-[#FEF0CD] text-2xl text-[#fd8703] py-2 px-2 rounded-full" onClick={()=>window.location.href = 'https://www.instagram.com/unmute.visual/'}>
-            <FaInstagram/>
-        </div>
-        <div className="bg-[#FEF0CD] text-2xl text-[#fd8703] py-2 px-2 rounded-full" onClick={()=>window.location.href = 'https://www.tiktok.com/@foto.laku?_t=8YO2h0zNG7u&_r=1'}>
-            <FaTiktok/>
-        </div>
-      </div> */}
     </section>
     <div className="h-[16rem] w-screen">
     <img src={ImageHero} className='w-full h-full object-cover' loading="lazy" alt="" />

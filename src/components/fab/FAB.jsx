@@ -9,7 +9,7 @@ function FAB() {
   const path = location.pathname.split('/');
   return (
     <motion.div
-      onClick={() =>{window.open(path[1] === 'tiktok' ? DataLink.WhatsappAlter : DataLink.Whatsapp,'_blank');fbq('track','Lead')}}
+      onClick={() =>{window.open(path[1] === 'tiktok' ? DataLink.WhatsappAlter : DataLink.Whatsapp,'_blank')}}
       animate={{
         y: [0, -10, 0],
         transition: {

@@ -776,7 +776,7 @@ export const DataService = [
     placeholder: PlaceVideo,
     text: "Video Katalog",
     rating: 5,
-    price: "Rp.200.000 / video",
+    price: "Rp.300.000 / video",
     desc: "Video bersama model untuk menunjukan detail produk secara singkat dan simpel dilihat customer",
     terms: ["lorem", "ipsum", "dolor"],
     portoFoto: [VideoCat5,VideoCat3,VideoCat4,VideoCat2],
@@ -800,8 +800,8 @@ export const DataService = [
 ];
 
 export const DataLink = {
-  Whatsapp:'http://split.to/Linksplitlpbaru',
-  WhatsappAlter:'http://split.to/linksplittiktok',
+  Whatsapp:'https://url-x.it/rV65rv9',
+  WhatsappAlter:'https://url-x.it/rV65rv9',
   Instagram: 'https://www.instagram.com/unmute.visual',
   Tiktok: 'https://www.tiktok.com/@foto.laku?_t=8YO2h0zNG7u&_r=1',
   Youtube: 'https://www.youtube.com/@fotolaku1812'

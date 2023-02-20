@@ -12,12 +12,12 @@ function Footer() {
 
   const newTabLeads = (link) =>{
     window.open(link,'_blank');
-    fbq('track','Lead');
+    // fbq('track','Lead');
   }
 
   const newTabContact = (link) =>{
     window.open(link,'_blank')
-    fbq('track','Contact')
+    // fbq('track','Contact')
   }
   return (
     <footer

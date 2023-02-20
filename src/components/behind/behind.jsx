@@ -26,7 +26,7 @@ function Behind() {
         </div>
         <motion.div
           whileTap={{ scale: 0.8, transition: { type: "spring", bounce: 0.6 } }}
-          onClick={() => {window.open(path[1] === 'tiktok' ? DataLink.WhatsappAlter : DataLink.Whatsapp,'_blank');fbq('track','Lead')}}
+          onClick={() => {window.open(path[1] === 'tiktok' ? DataLink.WhatsappAlter : DataLink.Whatsapp,'_blank')}}
           className="flex gap-2 py-5 font-bold shadow-2xl text-xl text-white bg-green-500 justify-center w-full"
         >
           <BsWhatsapp size={30} />
